@@ -161,6 +161,10 @@ header nav li:last-child {
  	Hero Section
 ----------------*/
 
+.background-image {
+  background-position: center;
+}
+
 .hero {
 	position: relative;
 	justify-content: center;
@@ -240,7 +244,7 @@ About Me
   padding-bottom: 50px;
 }
 
-.dsci {
+.links {
   color: #ea6258;
 }
 
