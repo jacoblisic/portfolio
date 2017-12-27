@@ -51,29 +51,30 @@
 
     <section class="contact" id="contact">
       <h2 class="contact-h2">Contact Me</h2>
-      <form action="mailto:jacoblisic@gmail.com" method="post" enctype="text/plain">
+      <form action="https://formspree.io/jacoblisic@gmail.com"
+      method="POST">
         <div class="form-field-group">
           <div class="form-div">
             <label class="form-label">First Name</label>
-            <input class="form-text" text="text" placeholder="Jacob"/>
+            <input class="form-text" text="text" placeholder="Jacob" name="firstname"/>
           </div>
           <div class="form-div">
             <label class="form-label">Last Name</label>
-            <input class="form-text" text="text" placeholder="Lisic"/>
+            <input class="form-text" text="text" placeholder="Lisic" name="lastname"/>
           </div>
           <div class="form-div">
             <label class="form-label">Email</label>
-            <input class="form-text" text="text" placeholder="me@jacoblisic.com"/>
+            <input class="form-text" text="text" placeholder="hey@jacoblisic.com" name="email"/>
           </div>
           <div class = "form-div">
             <label class="form-label">Phone Number</label>
-            <input class="form-text" text="text" placeholder="330-968-7020"/>
+            <input class="form-text" text="text" placeholder="330-968-7020" name="phonenumber"/>
           </div>
             <label class="form-label">Description</label>
             <textarea class="form-text-desc" name="message" placeholder="So what's up?"/></textarea>
           </div>
         </div>
-        <input type = "submit" class = "submit-btn" value = "SUBMIT"/>
+        <input type="submit" class="submit-btn" value="SUBMIT"/>
       </form>
     </section>
 
