@@ -29,6 +29,10 @@ a {
 	opacity: 0.9;
 }
 
+nav a {
+  transition: 0.3s;
+}
+
 a:hover {
 	opacity: 1;
 }
@@ -291,14 +295,65 @@ Portfolio
 
 .portfolio ul {
   max-width: 650px;
-  list-style-type: square;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: .5px;
 }
 
 .portfolio li {
-  margin-bottom: .75em;
+  margin-bottom: 1.5em;
+}
+
+.project-list {
+	list-style-type: none;
+}
+
+.project {
+	background-color: #ffffff;
+	padding: 1em 1.25em;
+	margin-bottom: .75em;
+	border-left: 5px #e6463a solid;
+  flex-basis: 100%;
+}
+
+.project h2 a {
+	text-decoration: none;
+	color: #414a4f;
+	text-transform: uppercase;
+}
+
+.project p {
+  font-size: 18px;
+  color: #414a4f;
+}
+
+.project a {
+  color: #e6463a;
+}
+
+
+@media screen and (min-width: 750px) {
+	.project-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.project {
+		width: 49%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.project {
+		width: 24%;
+	}
+
+	.project-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 }
 
 /**********
@@ -329,7 +384,7 @@ form {
   font-size: 16px;
   margin-bottom: 30px;
   width: 100%;
-  border: 1px solid #414a4f;
+  border: 3px solid #414a4f;
   border-radius: 3px;
 }
 
@@ -339,7 +394,7 @@ form {
   font-size: 16px;
   min-height: 150px;
   padding: 10px 20px;
-  border: 1px solid #414a4f;
+  border: 3px solid #414a4f;
   border-radius: 3px;
 }
 
