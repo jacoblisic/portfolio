@@ -25,7 +25,6 @@ a {
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-
 	opacity: 0.9;
 }
 
@@ -46,23 +45,14 @@ a.btn {
 	text-align: center;
 }
 
-hr {
-	width: 150px;
-	height: 2px;
-	background-color: #2196F3;
-	border: 0;
-	margin-bottom: 80px;
-}
-
 section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	padding: 125px 100px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
 	section {
 		padding: 100px 50px;
@@ -70,7 +60,7 @@ section {
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
 	section {
 		padding: 80px 30px;
@@ -88,7 +78,6 @@ section h3.title {
 
 section p {
 	max-width: 800px;
-	text-align: center;
 	margin-bottom: 35px;
 	padding: 0 20px;
 	line-height: 2;
@@ -102,6 +91,14 @@ ul.grid {
 	justify-content: center;
 }
 
+hr {
+	border: 0;
+  border-top: 3px solid #e6463a;
+  width: 80%;
+	opacity: .2;
+	text-align: center;
+	margin: 0 auto;
+}
 
 /*-------------
  	Header
@@ -118,6 +115,23 @@ header {
 	align-items: center;
 	color: #fff;
 	padding: 35px 100px 0;
+}
+
+.pheader {
+	color: #fff;
+	background-color: #414a4f;
+	margin-bottom: 200px;
+	padding: 40px;
+	position: fixed;
+	opacity: .9;
+}
+
+.nav-links {
+	font-size: 20px;
+}
+
+.nav-links:hover {
+	color: #ea6258;
 }
 
 header nav {
@@ -141,8 +155,6 @@ header nav li:first-child {
 header nav li:last-child {
 	margin-right: 0;
 }
-
-
 
 @media (max-width: 1000px) {
 	header {
@@ -169,7 +181,7 @@ header nav li:last-child {
   background-position: center;
 }
 
-.hero {
+.welcome {
 	position: relative;
 	justify-content: center;
 	min-height: 100vh;
@@ -177,7 +189,7 @@ header nav li:last-child {
 	text-align: center;
 }
 
-.hero .background-image {
+.welcome .background-image {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -188,7 +200,7 @@ header nav li:last-child {
 	z-index: -1;
 }
 
-.hero .background-image:after {
+.welcome .background-image:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -199,35 +211,35 @@ header nav li:last-child {
 	opacity: 0.75;
 }
 
-.hero h1 {
+.welcome h1 {
 	font: bold 60px 'Open Sans', sans-serif;
 	margin-bottom: 15px;
 }
 
-.hero h3 {
+.welcome h3 {
 	font: normal 28px 'Open Sans', sans-serif;
 	margin-bottom: 40px;
 }
 
-.hero a.btn {
+.welcome a.btn {
 	padding: 20px 46px;
 }
 
 @media (max-width: 800px) {
 
-	.hero {
+	.welcome {
 		min-height: 600px;
 	}
 
-	.hero h1 {
+	.welcome h1 {
 		font-size: 48px;
 	}
 
-	.hero h3 {
+	.welcome h3 {
 		font-size: 24px;
 	}
 
-	.hero a.btn {
+	.welcome a.btn {
 		padding: 15px 40px;
 	}
 
@@ -283,25 +295,41 @@ Portfolio
   color: #fff;
 }
 
-.portfolio-h2 {
-  font: bold 50px 'Open Sans', sans-serif;
-  padding-bottom: 50px;
+.portfolio2 {
+  background-color: #fff;
+  color: #414a4f;
+	margin-top: 110px;
 }
 
-.portfolio p {
+.portfolio-h2 {
+  font: bold 50px 'Open Sans', sans-serif;
+  padding-bottom: 75px;
+}
+
+.portfolio-h3 {
+	font: bold 30px 'Open Sans', sans-serif;
+	border-bottom: 5px solid #e6463a;
+	margin-bottom: 40px;
+}
+
+.portfolio p, .portfolio2 p, .portfolio3 p {
   font-size: 20px;
   text-align: left;
 }
 
-.portfolio ul {
+.portfolio ul, .portfolio2 ul, .portfolio3 ul {
   max-width: 650px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: .5px;
 }
 
-.portfolio li {
+.portfolio li, .portfolio2 li, .portfolio3 li {
   margin-bottom: 1.5em;
+}
+
+.portfolio2 ul, .portfolio3 ul {
+	list-style-type: square;
 }
 
 .project-list {
@@ -331,6 +359,10 @@ Portfolio
   color: #e6463a;
 }
 
+.portfolio-images {
+	width: 60%;
+	margin: 0 auto;
+}
 
 @media screen and (min-width: 750px) {
 	.project-list {
@@ -400,6 +432,8 @@ form {
 
 .form-text:focus, .form-text-desc:focus {
   outline: 0;
+	border: 3px solid #e6463a;
+	color: #e6463a;
 }
 
 .submit-btn {
