@@ -174,7 +174,7 @@ header nav li:last-child {
 }
 
 /*----------------
- 	Hero Section
+	Welcome Section
 ----------------*/
 
 .background-image {
@@ -245,9 +245,9 @@ header nav li:last-child {
 
 }
 
-/***********
-About Me
-***********/
+/*----------
+	About Me
+-----------*/
 
 .about p {
   font-size: 20px;
@@ -286,9 +286,9 @@ a.contact-btn {
 }
 
 
-/***********
-Portfolio
-************/
+/*----------
+	Portfolio
+-----------*/
 
 .portfolio {
   background-color: #414a4f;
@@ -388,9 +388,9 @@ Portfolio
 	}
 }
 
-/**********
-Contact
-**********/
+/*---------
+	Contact
+----------*/
 .contact-h2 {
   font: bold 50px 'Open Sans', sans-serif;
   padding-bottom: 50px;
@@ -452,7 +452,6 @@ form {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .submit-btn:hover, .submit-btn:focus {
   background-color: #414a4f;
