@@ -455,6 +455,7 @@ form {
 
 .submit-btn:hover, .submit-btn:focus {
   background-color: #414a4f;
+	color: #fff;
   transition: all 0.3s ease 0s;
 }
 
