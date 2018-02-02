@@ -433,7 +433,6 @@ form {
 .form-text:focus, .form-text-desc:focus {
   outline: 0;
 	border: 3px solid #e6463a;
-	color: #e6463a;
 }
 
 .submit-btn {
