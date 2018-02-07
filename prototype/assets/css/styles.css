@@ -138,7 +138,7 @@ header {
 	color: #fff;
 	background-color: #414a4f;
 	margin-bottom: 200px;
-	padding: 30px;
+	padding: 35px 100px;
 }
 
 .nav-links {
@@ -362,6 +362,7 @@ a.contact-btn {
 	margin-bottom: .75em;
 	border-left: 5px #e6463a solid;
   flex-basis: 100%;
+	border-radius: 3px;
 }
 
 .project h2 a {
