@@ -47,6 +47,7 @@ a.btn, a.contact-btn {
 	background-color: #e6463a;
 	font-weight: 800;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 a.btn:hover, a.contact-btn:hover {
