@@ -278,6 +278,7 @@ header nav li:last-child {
 .links {
   color: #ea6258;
 	opacity: .9;
+	border-bottom: 2px solid;
 }
 
 .links:hover {
@@ -538,6 +539,7 @@ footer {
 .git {
 	color: #fff;
 	opacity: .9;
+	border-bottom: 1px solid;
 }
 
 .git:hover {
