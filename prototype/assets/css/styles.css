@@ -1,3 +1,11 @@
+/* Site Colors
+e6463a
+ea6258
+414a4f
+fff
+555
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -66,6 +74,10 @@ section {
 		padding: 80px 30px;
 	}
 
+	.pheader {
+		padding: 30px;
+	}
+
 }
 
 section h3.title {
@@ -117,12 +129,17 @@ header {
 	padding: 35px 100px 0;
 }
 
+.logo {
+	max-width: 100px;
+	height: 50px;
+	box-sizing: content-box;
+}
+
 .pheader {
 	color: #fff;
 	background-color: #414a4f;
 	margin-bottom: 200px;
 	padding: 40px;
-	position: fixed;
 	opacity: .9;
 }
 
@@ -298,7 +315,7 @@ a.contact-btn {
 .portfolio2 {
   background-color: #fff;
   color: #414a4f;
-	margin-top: 110px;
+	margin-top: 80px;
 }
 
 .portfolio-h2 {
@@ -494,6 +511,7 @@ footer {
   left: 0;
   right: 0;
   text-align: center;
+	border-bottom: 1em #e6463a solid;
 }
 
 .fa {
