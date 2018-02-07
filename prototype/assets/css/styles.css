@@ -1,16 +1,16 @@
 /* Site Colors
-e6463a
-ea6258
-414a4f
-fff
-555
+#e6463a
+#ea6258
+#414a4f
+#fff
+#555
 */
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -33,24 +33,24 @@ a {
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-	opacity: 0.9;
 }
 
 nav a {
   transition: 0.3s;
 }
 
-a:hover {
-	opacity: 1;
-}
-
-a.btn {
+a.btn, a.contact-btn {
+	opacity: 0.9;
 	color: #fff;
 	border-radius: 3px;
 	text-transform: uppercase;
 	background-color: #e6463a;
 	font-weight: 800;
 	text-align: center;
+}
+
+a.btn:hover, a.contact-btn:hover {
+	opacity: 1;
 }
 
 section {
@@ -72,10 +72,6 @@ section {
 
 	section {
 		padding: 80px 30px;
-	}
-
-	.pheader {
-		padding: 30px;
 	}
 
 }
@@ -141,7 +137,7 @@ header {
 	color: #fff;
 	background-color: #414a4f;
 	margin-bottom: 200px;
-	padding: 40px;
+	padding: 30px;
 }
 
 .nav-links {
@@ -280,6 +276,11 @@ header nav li:last-child {
 
 .links {
   color: #ea6258;
+	opacity: .9;
+}
+
+.links:hover {
+	opacity: 1;
 }
 
 .about h3 {
@@ -521,10 +522,24 @@ footer {
 .fa {
   color: #fff;
   padding: 10px;
+	opacity: .9;
+}
+
+.fa:hover {
+	opacity: 1;
 }
 
 .footer-text {
   color: #fff;
+}
+
+.git {
+	color: #fff;
+	opacity: .9;
+}
+
+.git:hover {
+	opacity: 1;
 }
 
 .p1 {
