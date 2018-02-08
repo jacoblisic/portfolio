@@ -311,6 +311,7 @@ header nav li:last-child {
 
 .links:hover {
 	opacity: 1;
+	border: none;
 }
 
 .about h3 {
@@ -604,6 +605,7 @@ footer {
 
 .git:hover {
 	opacity: 1;
+	border: none;
 }
 
 .p1 {
