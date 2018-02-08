@@ -389,6 +389,12 @@ a.contact-btn {
 	}
 }
 
+/*
+.p2portfolio {
+	text-align: center;
+}
+*/
+
 .portfolio ul, .portfolio2 ul, .portfolio3 ul {
   max-width: 700px;
   font-size: 18px;
