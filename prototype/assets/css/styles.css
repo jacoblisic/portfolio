@@ -89,7 +89,7 @@ section h3.title {
 section p {
 	max-width: 800px;
 	margin-bottom: 35px;
-	padding: 0 5px;
+	padding: 0 15px;
 	line-height: 2;
   letter-spacing: .5px;
 }
@@ -384,10 +384,18 @@ a.contact-btn {
 
 .portfolio li, .portfolio2 li, .portfolio3 li {
   margin-bottom: 1.5em;
+	font-size: 16px;
+}
+
+@media (min-width: 600px) {
+	.portfolio li, .portfolio2 li, .portfolio3 li {
+		font-size: 18px;
+	}
 }
 
 .portfolio2 ul, .portfolio3 ul {
 	list-style-type: square;
+	padding: 0 35px;
 }
 
 .project-list {
