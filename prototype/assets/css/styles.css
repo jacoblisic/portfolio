@@ -352,15 +352,12 @@ a.contact-btn {
 
 .portfolio-h2 {
   font: bold 45px 'Roboto', sans-serif;
-	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-bottom: 75px;
 }
 
 @media (min-width: 700px) {
 	.portfolio-h2 {
 		font-size: 55px;
-		padding-bottom: 75px;
-		padding-top: 25px;
 	}
 }
 
@@ -384,6 +381,10 @@ a.contact-btn {
 @media (min-width: 700px) {
 	.portfolio p, .portfolio2 p, .portfolio3 p {
 		font-size: 20px;
+	}
+
+	.portfolio3-p3 {
+		margin-top: 20px;
 	}
 }
 
@@ -486,7 +487,7 @@ form {
 }
 
 .form-label {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #414a4f;
   display: block;
   margin-bottom: 10px;
@@ -521,7 +522,7 @@ form {
   margin: 0 auto;
   margin-top: 20px;
   background: #e6463a;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   padding: 15px 70px;
   text-align: center;
