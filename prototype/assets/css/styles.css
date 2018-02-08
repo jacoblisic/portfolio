@@ -152,7 +152,13 @@ header {
 	color: #fff;
 	background-color: #414a4f;
 	margin-bottom: 200px;
-	padding: 35px 100px;
+	padding: 20px 100px;
+}
+
+@media (min-width: 700px) {
+	.pheader {
+		padding: 35px 100px;
+	}
 }
 
 .nav-links {
@@ -359,9 +365,15 @@ a.contact-btn {
 }
 
 .portfolio-h3 {
-	font: bold 30px 'Roboto', sans-serif;
+	font: bold 25px 'Roboto', sans-serif;
 	border-bottom: 5px solid #e6463a;
 	margin-bottom: 40px;
+}
+
+@media (min-width: 700px) {
+	.portfolio-h3 {
+		font-size: 30px;
+	}
 }
 
 .portfolio p, .portfolio2 p, .portfolio3 p {
@@ -384,13 +396,7 @@ a.contact-btn {
 
 .portfolio li, .portfolio2 li, .portfolio3 li {
   margin-bottom: 1.5em;
-	font-size: 16px;
-}
-
-@media (min-width: 600px) {
-	.portfolio li, .portfolio2 li, .portfolio3 li {
-		font-size: 18px;
-	}
+	font-size: 18px;
 }
 
 .portfolio2 ul, .portfolio3 ul {
@@ -461,8 +467,14 @@ a.contact-btn {
 	Contact
 ----------*/
 .contact-h2 {
-  font: bold 50px 'Roboto', sans-serif;
+  font: bold 45px 'Roboto', sans-serif;
   padding-bottom: 50px;
+}
+
+@media (min-width: 700px) {
+	.contact-h2 {
+		font-size: 50px;
+	}
 }
 
 form {
