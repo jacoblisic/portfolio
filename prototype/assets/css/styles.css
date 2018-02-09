@@ -1,10 +1,11 @@
-/* Site Colors
+/**********
+COLORS
 #e6463a
 #ea6258
 #414a4f
 #fff
 #555
-*/
+**********/
 
 * {
 	margin: 0;
@@ -307,6 +308,7 @@ header nav li:last-child {
   color: #ea6258;
 	opacity: .9;
 	border-bottom: 2px solid;
+	transition: all 0.3s ease 0s;
 }
 
 .links:hover {
@@ -353,12 +355,19 @@ a.contact-btn {
 
 .portfolio-h2 {
   font: bold 45px 'Roboto', sans-serif;
-	padding-bottom: 75px;
+	padding-bottom: 50px;
+}
+
+.portfolio-h2-p {
+	font: bold 45px 'Roboto', sans-serif;
+	padding-bottom: 50px;
+	padding-top: 25px;
 }
 
 @media (min-width: 700px) {
-	.portfolio-h2 {
+	.portfolio-h2, .portfolio-h2-p {
 		font-size: 55px;
+		padding-bottom: 75px;
 	}
 }
 
@@ -607,6 +616,7 @@ footer {
 	color: #fff;
 	opacity: .9;
 	border-bottom: 1px solid;
+	transition: all 0.3s ease 0s;
 }
 
 .git:hover {
