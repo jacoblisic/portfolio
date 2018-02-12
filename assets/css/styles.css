@@ -549,6 +549,9 @@ form {
   text-decoration: none;
   cursor: pointer;
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
 }
 
 .submit-btn:hover, .submit-btn:focus {
