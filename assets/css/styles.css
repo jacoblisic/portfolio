@@ -548,6 +548,7 @@ form {
   letter-spacing: 2px;
   text-decoration: none;
   cursor: pointer;
+	-webkit-appearance: none;
 }
 
 .submit-btn:hover, .submit-btn:focus {
