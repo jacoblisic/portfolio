@@ -318,7 +318,7 @@ header nav li:last-child {
 .links {
   color: #ea6258;
 	opacity: .9;
-	border-bottom: 3px solid;
+	border-bottom: 2px solid;
 	transition: all 0.3s ease 0s;
 }
 
