@@ -49,11 +49,15 @@ a.btn, a.contact-btn {
 	background-color: #e6463a;
 	font-weight: 800;
 	text-align: center;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
+	transition: all 0.3s ease;
 }
 
 a.btn:hover, a.contact-btn:hover {
 	opacity: 1;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 section {
@@ -140,6 +144,13 @@ header {
 	box-sizing: content-box;
 	opacity: 1;
 	padding: 1em;
+	transition: all 0.3s ease;
+}
+
+.logo:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 @media (min-width: 700px) {
@@ -307,7 +318,7 @@ header nav li:last-child {
 .links {
   color: #ea6258;
 	opacity: .9;
-	border-bottom: 2px solid;
+	border-bottom: 3px solid;
 	transition: all 0.3s ease 0s;
 }
 
@@ -551,7 +562,6 @@ form {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-
 }
 
 .submit-btn:hover, .submit-btn:focus {
@@ -606,10 +616,14 @@ footer {
   color: #fff;
   padding: 10px;
 	opacity: .9;
+	transition: all 0.3s ease;
 }
 
 .fa:hover {
 	opacity: 1;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .footer-text {
@@ -619,7 +633,7 @@ footer {
 .git {
 	color: #fff;
 	opacity: .9;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
 	transition: all 0.3s ease 0s;
 }
 
