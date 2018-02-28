@@ -11,6 +11,8 @@ COLORS
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -37,9 +39,22 @@ a {
 	cursor: pointer;
 }
 
-nav a {
-  transition: 0.3s;
+/* Nav Animation */
+.nav-links {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  transition:.3s ease;
+	line-height: 1.5;
+	border-bottom: 5px solid transparent;
 }
+
+.nav-links:hover, .navlinks:focus {
+	color: #fff;
+	border-bottom: 5px solid #ea6258;
+}
+/* End Nav Animation */
+
 
 a.btn, a.contact-btn {
 	opacity: 0.9;
@@ -53,11 +68,36 @@ a.btn, a.contact-btn {
 	transition: all 0.3s ease;
 }
 
+a.contact-btn {
+	opacity: 1;
+}
+
 a.btn:hover, a.contact-btn:hover {
 	opacity: 1;
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #414a4f;
+	border-radius: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+	top: 100%;
+	z-index: -1;
+  transition: top .1s ease-in;
+}
+
+.fill:hover {
+	color: #fff;
+}
+
+.fill:hover:before {
+	top: 0;
 }
 
 section {
@@ -171,14 +211,6 @@ header {
 	.pheader {
 		padding: 35px 100px;
 	}
-}
-
-.nav-links {
-	font-size: 20px;
-}
-
-.nav-links:hover {
-	color: #ea6258;
 }
 
 header nav {
@@ -548,7 +580,7 @@ form {
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  background: #e6463a;
+  background-color: #e6463a;
   font-family: 'Roboto', sans-serif;
   color: #fff;
   padding: 15px 70px;
@@ -562,16 +594,15 @@ form {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-}
-
-.submit-btn:hover, .submit-btn:focus {
-  background-color: #414a4f;
-	color: #fff;
-  transition: all 0.3s ease 0s;
+	transition: all 0.3s ease-in;
 }
 
 .submit-btn:focus {
   outline: 0;
+}
+
+.submit-btn:hover {
+	background-color: #414a4f;
 }
 
 @media screen and (min-width: 700px) {
@@ -588,14 +619,6 @@ form {
 
 }
 
-/*
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2em;
-}
-*/
-
 footer {
   margin: auto;
   background-color: #414a4f;
@@ -608,7 +631,7 @@ footer {
   text-align: center;
 }
 
-.test {
+.center-footer {
 	padding: 3.5em;
 }
 
