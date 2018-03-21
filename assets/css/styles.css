@@ -468,6 +468,7 @@ a.contact-btn {
 	list-style-type: none;
 }
 
+/* Data Delighter */
 .project-animation {
 	opacity: 0;
 	transition: .4s all ease-in-out;
@@ -489,6 +490,7 @@ a.contact-btn {
 	opacity: 1;
 	transform: none;
 }
+/* End Data Delighter */
 
 .project {
 	background-color: #ffffff;
