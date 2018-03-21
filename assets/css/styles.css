@@ -104,7 +104,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 125px 100px;
+	padding: 100px 100px;
 }
 
 @media (max-width: 1000px) {
@@ -468,6 +468,28 @@ a.contact-btn {
 	list-style-type: none;
 }
 
+.project-animation {
+	opacity: 0;
+	transition: .4s all ease-in-out;
+	transform: translateX(100%);
+}
+
+.project-animation.started {
+	opacity: 1;
+	transform: none;
+}
+
+.project-animation2 {
+	opacity: 0;
+	transition: .4s all ease-in-out;
+	transform: translateX(-100%);
+}
+
+.project-animation2.started {
+	opacity: 1;
+	transform: none;
+}
+
 .project {
 	background-color: #ffffff;
 	padding: 1em 1.25em;
@@ -543,6 +565,17 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1em;
+}
+
+.form-animation {
+	opacity: 0;
+	transition: .3s all ease-in-out;
+	transform: translateY(10%);
+}
+
+.form-animation.started {
+	opacity: 1;
+	transform: none;
 }
 
 .form-label {
