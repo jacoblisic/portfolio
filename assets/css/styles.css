@@ -68,6 +68,31 @@ a.btn, a.contact-btn {
 	transition: all 0.3s ease;
 }
 
+/* Scroll Indicator */
+/*
+.scroll-indicator {
+	position: absolute;
+	left: 50%;
+	font-size: 40px;
+
+	-webkit-animation: bounce 1s infinite;
+	animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+	 0% { top: 15%; }
+	 50%   { top: 20%; }
+	 100% { top: 15%; }
+}
+
+@keyframes bounce {
+	 0% { top: 15%; }
+	 50%   { top: 20%; }
+	 100% { top: 15%; }
+}
+*/
+/* End Scroll Indicator */
+
 a.contact-btn {
 	opacity: 1;
 }
@@ -388,6 +413,7 @@ a.contact-btn {
 .portfolio {
   background-color: #414a4f;
   color: #fff;
+	overflow: hidden;
 }
 
 .portfolio2 {
@@ -404,7 +430,7 @@ a.contact-btn {
 .portfolio-h2-p {
 	font: bold 45px 'Roboto', sans-serif;
 	padding-bottom: 50px;
-	padding-top: 25px;
+	padding-top: 45px;
 }
 
 @media (min-width: 700px) {
