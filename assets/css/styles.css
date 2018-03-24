@@ -44,7 +44,7 @@ a {
   display: inline-block;
   color: #fff;
   font-size: 20px;
-  transition:.3s ease;
+  transition:.3s ease-in-out;
 	line-height: 1.5;
 	border-bottom: 5px solid transparent;
 }
@@ -230,6 +230,7 @@ header {
 	background-color: #414a4f;
 	margin-bottom: 200px;
 	padding: 20px 100px;
+	position: fixed;
 }
 
 @media (min-width: 700px) {
