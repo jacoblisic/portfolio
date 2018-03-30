@@ -230,7 +230,6 @@ header {
 	background-color: #414a4f;
 	margin-bottom: 200px;
 	padding: 20px 100px;
-	position: fixed;
 }
 
 @media (min-width: 700px) {
