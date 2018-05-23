@@ -5,6 +5,7 @@ COLORS
 #414a4f
 #fff
 #555
+#545C60
 **********/
 
 * {
@@ -21,6 +22,11 @@ html {
 	color: #555;
 }
 
+html, body {
+	height: 100%;
+}
+
+/* Custom Highlight Color */
 ::selection {
   background: #ee7e76;
 }
@@ -28,6 +34,31 @@ html {
 ::-moz-selection {
   background: #ee7e76;
 }
+/* End Custom Highlight Color */
+
+/* Custom Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #545C60;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e6463a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* End Custom Scroll Bar */
 
 ul, nav {
 	list-style: none;
@@ -203,6 +234,21 @@ header {
 	padding: 35px 100px 0;
 }
 
+#navbar {
+	position: fixed; /* Make it stick/fixed */
+  top: -100px;
+	transition: top 0.3s;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 35px 100px 0;
+}
+
+#navbar li a {
+	color: #fff;
+	background-color: #414a4f;
+}
+
 .logo {
 	max-width: 100px;
 	height: 50px;
@@ -225,7 +271,7 @@ header {
 	}
 }
 
-.pheader {
+.pheader, #navbar {
 	color: #fff;
 	background-color: #414a4f;
 	margin-bottom: 200px;
@@ -233,30 +279,30 @@ header {
 }
 
 @media (min-width: 700px) {
-	.pheader {
+	.pheader, #navbar {
 		padding: 35px 100px;
 	}
 }
 
-header nav {
+header nav, #navbar {
 	display: flex;
 }
 
-header nav li {
+header nav li, #navbar li {
 	margin: 0 15px;
   font-size: 18px;
   letter-spacing: .5px;
 }
 
-header nav li:hover {
+header nav li:hover, #navbar li {
   color: #ea6258;
 }
 
-header nav li:first-child {
+header nav li:first-child, #navbar li {
 	margin-left: 0;
 }
 
-header nav li:last-child {
+header nav li:last-child, #navbar li {
 	margin-right: 0;
 }
 
@@ -276,11 +322,41 @@ header nav li:last-child {
 	}
 }
 
+/* Scroll Progress */
+
+.progress-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #545C60;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  background: #e6463a;
+  width: 0%;
+}
+
+/* End Scroll Progress */
+
 /*----------------
 	Welcome Section
 ----------------*/
 
 .background-image {
+	height: 100%;
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -419,6 +495,13 @@ a.contact-btn {
   background-color: #414a4f;
   color: #fff;
 	overflow: hidden;
+}
+
+.portfolio ul li h2 a:hover {
+	color: #ea6258;
+	opacity: 1;
+	border-bottom: 2px solid;
+	transition: all 0.3s ease 0s;
 }
 
 .portfolio2 {
