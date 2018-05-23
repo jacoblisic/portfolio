@@ -158,7 +158,7 @@ section h3.title {
 
 section p {
 	max-width: 800px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	padding: 0 15px;
 	line-height: 2;
   letter-spacing: .5px;
@@ -299,7 +299,6 @@ header nav li:last-child {
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background-color: #2196F3;
 	z-index: -1;
 }
 
@@ -386,9 +385,16 @@ header nav li:last-child {
 
 .about h3 {
   font: normal 28px 'Roboto', sans-serif;
+	text-align: center;
   font-weight: bold;
   margin-bottom: 40px;
   margin-top: 20px;
+}
+
+@media (min-width: 700px) {
+	.about h3 {
+		font-size: 30px;
+	}
 }
 
 .contact-btn {
@@ -404,7 +410,6 @@ header nav li:last-child {
 a.contact-btn {
   padding: 15px 30px;
 }
-
 
 /*----------
 	Portfolio
@@ -583,7 +588,7 @@ a.contact-btn {
 
 @media (min-width: 700px) {
 	.contact-h2 {
-		font-size: 50px;
+		font-size: 55px;
 	}
 }
 
