@@ -40,22 +40,22 @@ html, body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #545C60;
+  background: #545C60;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #e6463a;
+  background: #e6463a;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #989D9F;
 }
 
 /* End Custom Scroll Bar */
