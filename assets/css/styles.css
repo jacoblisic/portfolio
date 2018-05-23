@@ -22,11 +22,11 @@ html {
 }
 
 ::selection {
-  background: #ea6258;
+  background: #ee7e76;
 }
 
 ::-moz-selection {
-  background: #ea6258;
+  background: #ee7e76;
 }
 
 ul, nav {
