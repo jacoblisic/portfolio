@@ -156,11 +156,31 @@ a.btn:hover, a.contact-btn:hover {
 	top: 0;
 }
 
-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 100px 100px;
+@media (min-width: 910px) {
+	.contact, .portfolio, .about, .welcome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 100px 100px;
+	}
+}
+
+
+@media (max-width: 910px) {
+	.contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.portfolio, .about, .welcome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-h2 {
+		text-align: center;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -427,6 +447,35 @@ header nav li:last-child, #navbar li {
 	About Me
 -----------*/
 
+.profile {
+	border-radius: 50%;
+	width: 250px;
+	float: left;
+	margin: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+	.profile {
+    display: block;
+    float: none;
+		width: 150px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 699px) {
+	.profile {
+		width: 150px;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 790px) {
+	.profile {
+		width: 200px;
+	}
+}
+
 .about p {
   font-size: 18px;
   text-align: left;
@@ -659,6 +708,66 @@ a.contact-btn {
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
+}
+
+/*---------
+	My Work Project Cards with overlay
+----------*/
+
+.work-container {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+}
+
+.project-image {
+	display: block;
+	width: 300px;
+	height: 200px;
+	border-radius: 12px;
+}
+
+.overlay {
+	position: absolute;
+	transition: all .2s ease;
+	opacity: 0;
+	background-color: #545C60; /* why is this here? */
+}
+
+.work-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay-left {
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	border-radius: 12px;
+
+}
+
+.work-container:hover .overlay-left {
+	width: 100%;
+	opacity: 1;
+
+}
+
+.overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #555;
+}
+
+.overlay-button {
+	color: #ffffff;
+	background-color: #e6463a;
+	padding: 10px 15px;
 }
 
 /*---------
