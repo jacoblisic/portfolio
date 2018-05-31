@@ -184,19 +184,15 @@ a.btn:hover, a.contact-btn:hover {
 }
 
 @media (max-width: 1000px) {
-
 	section {
 		padding: 100px 50px;
 	}
-
 }
 
 @media (max-width: 600px) {
-
 	section {
 		padding: 80px 30px;
 	}
-
 }
 
 section h3.title {
@@ -209,7 +205,7 @@ section h3.title {
 
 section p {
 	max-width: 800px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	padding: 0 15px;
 	line-height: 2;
   letter-spacing: .5px;
@@ -452,6 +448,7 @@ header nav li:last-child, #navbar li {
 	width: 250px;
 	float: left;
 	margin: 25px;
+	border: #414a4f solid 3px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -926,6 +923,12 @@ footer {
 .p1 {
   margin-top: 30px;
 	line-height: 25px;
+}
+
+@media (max-width: 416px) {
+	.p1, .p2 {
+		font-size: 15px;
+	}
 }
 
 .p2 {
