@@ -773,6 +773,7 @@ a.contact-btn {
 }
 
 .overlay-p {
+	text-align: center;
 	font-size: 16px;
 	color: #555;
 	line-height: 1.5;
