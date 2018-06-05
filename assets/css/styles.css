@@ -586,6 +586,7 @@ a.contact-btn {
 	}
 }
 
+/*
 .portfolio p, .portfolio2 p, .portfolio3 p {
   font-size: 18px;
   text-align: left;
@@ -600,7 +601,7 @@ a.contact-btn {
 		margin-top: 20px;
 	}
 }
-
+*/
 /*
 .p2portfolio {
 	text-align: center;
@@ -711,11 +712,18 @@ a.contact-btn {
 	My Work Project Cards with overlay
 ----------*/
 
+.main-work-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
 .work-container {
 	position: relative;
 	width: 300px;
 	height: 200px;
 	display: inline-block;
+	margin: 12px;
 }
 
 .project-image {
@@ -727,7 +735,7 @@ a.contact-btn {
 
 .overlay {
 	position: absolute;
-	transition: all .2s ease;
+	transition: all .3s ease;
 	opacity: 0;
 	background-color: #545C60; /* why is this here? */
 }
@@ -743,7 +751,6 @@ a.contact-btn {
 	left: 0;
 	background-color: #ffffff;
 	border-radius: 12px;
-
 }
 
 .work-container:hover .overlay-left {
@@ -753,18 +760,40 @@ a.contact-btn {
 }
 
 .overlay-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 	position: absolute;
+	width: 80%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 16px;
 	color: #555;
 }
 
+.overlay-p {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
 .overlay-button {
+	width: 155px;
+	text-align: center;
 	color: #ffffff;
-	background-color: #e6463a;
 	padding: 10px 15px;
+	border-radius: 3px;
+	background-color: #e6463a;
+}
+
+.overlay-button:hover {
+	-webkit-animation: jello 1s;
+	animation: jello 1s;
+	background-color: #555;
+	transition: all .8s ease;
 }
 
 /*---------
