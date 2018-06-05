@@ -737,7 +737,6 @@ a.contact-btn {
 	position: absolute;
 	transition: all .3s ease;
 	opacity: 0;
-	background-color: #545C60; /* why is this here? */
 }
 
 .work-container:hover .overlay {
