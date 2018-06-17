@@ -25,51 +25,53 @@
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
+
   <body>
-
-    <header class="pheader">
+    <header class="gray-header">
       <a href="index.html"><img src="assets/img/lisiclogo.svg" alt="logo" class="logo" /></a>
-  		<nav>
-  			<li><a href="index.html#about" class="nav-links">About</a></li>
-  			<li><a href="portfolio.html" class="nav-links">Work</a></li>
-  			<li><a href="index.html#contact" class="nav-links">Contact</a></li>
-  		</nav>
-  	</header>
+      <nav>
+        <li><a href="index.html#about" class="nav-links">About</a></li>
+        <li><a href="work.html" class="nav-links">Work</a></li>
+        <li><a href="index.html#contact" class="nav-links">Contact</a></li>
+      </nav>
+    </header>
 
-    <section class="portfolio2">
-      <h2 class="portfolio-h2-p">Portfolio</h2>
-      <h3 class="portfolio-h3">jacoblisic.com</h3>
-      <p>I created this website during December 2017 through February 2018. My intension was to create a portfolio website that had a very clean design. This would then help me develop a website that had a great user experience and something that people will want to interact with.</p>
-      <p>I also wanted the website to have subtle animations that created a unique environment. I did this through buttons, links, and JavaScript animations throughout the site.</p>
-      <p class="p2portfolio">My development process included:</p>
-      <ul>
-        <li>Researched and compared the portfolio websites of multiple people over the web.</li>
-        <li>Created and selected the content to display on the website, including creating the logo and the text you are reading right now.</li>
-        <li>Sketched numerous ideas of what the pages may look like.</li>
-        <li>Developed the final website to publish.</li>
-        <li>Tested the website on multiple browsers, making sure it was compatible with each of them.</li>
-        <li>Launched the portfolio website.</li>
-      </ul>
-    </section>
+    <section class="individual-work">
+      <h2 class="individual-work-h2">Portfolio</h2>
 
-    <hr />
+      <div class="individual-flex">
 
-    <section class="portfolio3" id="portfolio3">
-      <h3 class="portfolio-h3">Buckeye Bed and Breakfast</h3>
-      <p>During the fall 2017 semester, I was tasked with creating the design and prototypes for a mock bed and breakfast called, Buckeye Bed and Breakfast.</p>
-      <p class="p2portfolio">Specifically, I did the following:</p>
-      <ul>
-        <li>Researched competing bed and breakfasts, listing frequent content on all websites that would help me decide what content to use for Buckeye Bed and Breakfast.</li>
-        <li>Gathered content provided to me and choose which content needed to be implemented into the website.</li>
-        <li>Sketched mockup pages of what I wanted the design of the website to look like.</li>
-        <li>Created a style tiles for the website, along with a working interactive prototype.</li>
-        <li>Developed final website templates based off of my research, sketched, and style tiles.</li>
-        <li>Executed usability and technical testing.</li>
-        <li>Created a pattern library based off of the final objects of the website.</li>
-      </ul>
-      <p class="portfolio3-p3">
-        View the <a href="https://kentstateweb.github.io/f2017-jacob-lisic-group-8/" class="links" target="_blank">project hub</a> or go directly to the <a href="https://kentstateweb.github.io/f2017-jacob-lisic-group-8/prototype/index.html" class="links" target="_blank">website</a>.
-      </p>
+        <div class="individual-left">
+          <div class="individual-work-image">
+            <a href="jacoblisic.com" target="_blank"><img src="assets/img/logocard2.png" alt="Lisic Logo" /></a>
+          </div>
+          <h3 class="skills">Skills used:</h3>
+          <div class="tag-list">
+            <div class="tag">HTML</div>
+            <div class="tag tag-red">CSS</div>
+            <div class="tag">Responsive Web Design</div>
+            <div class="tag tag-red">Design</div>
+            <div class="tag">Flexbox</div>
+          </div>
+        </div>
+
+        <div class="individual-right">
+          <p>My portfolio was made with a clean design and great user experience in mind. If you have any recommendations for it, please fill out my <a href="index.html#contact" class="links">contact</a> form! Thank you for viewing my site!</p>
+
+          <h3>Development Process:</h3>
+          <ul>
+            <li>Researched and compared the portfolio websites across the web.</li>
+            <li>Created and selected the content to display on the website, including creating the logo and the text you are reading right now.</li>
+            <li>Sketched numerous ideas of what the pages may look like.</li>
+            <li>Developed the final website to publish.</li>
+            <li>Tested the website on multiple browsers, making sure it was compatible with each of them.</li>
+            <li>Launched the portfolio website.</li>
+            <li>Continue to update the website to make for the best experience possible.</li>
+            <li>Integrate new ideas into the website as I learn new skills.</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
     <footer>
@@ -83,10 +85,16 @@
       </div>
     </footer>
 
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link href = "assets/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Link for stylessheet -->
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="scripts.js"></script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113910268-1"></script>
@@ -97,5 +105,6 @@
 
       gtag('config', 'UA-113910268-1');
     </script>
+
   </body>
 </html>
