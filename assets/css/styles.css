@@ -29,6 +29,7 @@ html, body {
 /* Custom Highlight Color */
 ::selection {
   background: #ee7e76;
+	color: #fff;
 }
 
 ::-moz-selection {
@@ -94,6 +95,7 @@ a.btn, a.contact-btn {
 	border-radius: 3px;
 	text-transform: uppercase;
 	background-color: #e6463a;
+	font-family: 'Lato', sans-serif;
 	font-weight: 800;
 	text-align: center;
 	letter-spacing: 1.5px;
@@ -193,14 +195,6 @@ a.btn:hover, a.contact-btn:hover, a.work-btn:hover {
 	}
 }
 
-section h3.title {
-	color: #414a4f;
-	text-transform: capitalize;
-	font: bold 32px 'Open Sans', sans-serif;
-	margin-bottom: 35px;
-	text-align: center;
-}
-
 section p {
 	max-width: 800px;
 	margin-bottom: 15px;
@@ -215,14 +209,14 @@ ul.grid {
 	justify-content: center;
 }
 
-hr {
+/*hr {
 	border: 0;
   border-top: 3px solid #e6463a;
   width: 80%;
 	opacity: .2;
 	text-align: center;
 	margin: 0 auto;
-}
+}*/
 
 /*-------------
  	Header
@@ -410,7 +404,7 @@ header nav li:last-child, #navbar li {
 }
 
 .welcome h1 {
-	font: bold 60px 'Roboto', sans-serif;
+	font: bold 60px 'Lato', sans-serif;
 	margin-bottom: 15px;
 }
 
@@ -480,11 +474,12 @@ header nav li:last-child, #navbar li {
 .about p {
   font-size: 18px;
   text-align: left;
+	font-family: 'Roboto', sans-serif;
 }
 
 .about-h2 {
   color: #414a4f;
-  font: bold 45px 'Roboto', sans-serif;
+  font: bold 45px 'Lato', sans-serif;
   padding-bottom: 50px;
 }
 
@@ -510,7 +505,7 @@ header nav li:last-child, #navbar li {
 }
 
 .about h3 {
-  font: normal 24px 'Roboto', sans-serif;
+  font: normal 24px 'Lato', sans-serif;
 	text-align: center;
   font-weight: bold;
   margin-bottom: 40px;
@@ -528,7 +523,7 @@ header nav li:last-child, #navbar li {
 	border-radius: 3px;
 	text-transform: uppercase;
 	background-color: #e6463a;
-	font-weight: 800;
+	font-family: 'Lato', sans-serif;
   letter-spacing: .5px;
 	text-align: center;
 }
@@ -568,7 +563,7 @@ a.contact-btn {
 }
 
 .work-h1 {
-	font: bold 50px 'Roboto', sans-serif;
+	font: bold 50px 'Lato', sans-serif;
 	color: #fff;
 	padding-bottom: 50px;
 	margin-top: 50px;
@@ -723,7 +718,7 @@ a.contact-btn {
 
 .individual-work-h2 {
 	color: #414a4f;
-	font: bold 40px 'Roboto', sans-serif;
+	font: bold 40px 'Lato', sans-serif;
 	padding-bottom: 50px;
 }
 
@@ -778,6 +773,7 @@ a.contact-btn {
 	padding: 10px 15px;
 	background-color: #e6463a;
 	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	letter-spacing: 1px;
 	transition: all .2s ease;
@@ -881,56 +877,14 @@ a.contact-btn {
 }
 
 .portfolio h2 {
-  font: bold 45px 'Roboto', sans-serif;
+  font: bold 45px 'Lato', sans-serif;
 	padding-bottom: 50px;
-}
-
-.portfolio h3 {
-	font: bold 22px 'Roboto', sans-serif;
-	letter-spacing: 1.1px;
-	margin-bottom: 1em;
-	align-self: flex-start;
-}
-
-.portfolio-h2-p {
-	font: bold 45px 'Roboto', sans-serif;
-	padding-bottom: 50px;
-	padding-top: 45px;
 }
 
 @media (min-width: 700px) {
-	.portfolio h2, .portfolio-h2-p {
+	.portfolio h2 {
 		font-size: 55px;
 	}
-}
-
-.portfolio-h3 {
-	font: bold 22px 'Roboto', sans-serif;
-	border-bottom: 5px solid #e6463a;
-	margin-bottom: 40px;
-}
-
-@media (min-width: 700px) {
-	.portfolio-h3 {
-		font-size: 30px;
-	}
-}
-
-.portfolio ul, .portfolio2 ul, .portfolio3 ul {
-  max-width: 700px;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: .5px;
-}
-
-.portfolio li, .portfolio2 li, .portfolio3 li {
-  margin-bottom: 1.5em;
-	font-size: 18px;
-}
-
-.portfolio2 ul, .portfolio3 ul {
-	list-style-type: square;
-	padding: 0 35px;
 }
 
 .project-list {
@@ -1047,6 +1001,7 @@ a.contact-btn {
 	position: absolute;
 	transition: all .3s ease;
 	opacity: 0;
+	overflow: hidden;
 }
 
 .work-container:hover .overlay, .work-container:focus .overlay {
@@ -1091,7 +1046,8 @@ a.contact-btn {
 }
 
 .overlay-button {
-	width: 155px;
+	letter-spacing: .5px;
+	width: 160px;
 	text-align: center;
 	color: #ffffff;
 	padding: 10px 15px;
@@ -1115,6 +1071,7 @@ a.work-btn {
 	border-radius: 3px;
 	text-transform: uppercase;
 	background-color: #e6463a;
+	font-family: 'Lato', sans-serif;
 	font-weight: 800;
 	text-align: center;
 	letter-spacing: 1.5px;
@@ -1126,7 +1083,7 @@ a.work-btn {
 	Contact
 ----------*/
 .contact-h2 {
-  font: bold 45px 'Roboto', sans-serif;
+  font: bold 45px 'Lato', sans-serif;
   padding-bottom: 50px;
 }
 
@@ -1156,29 +1113,26 @@ form {
 }
 
 .form-label {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #414a4f;
   display: block;
   margin-bottom: 10px;
 }
 
-.form-text {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-bottom: 30px;
-  width: 100%;
-  border: 3px solid #414a4f;
-  border-radius: 3px;
+.form-text, .form-text-desc {
+	margin-bottom: 30px;
+	padding: 10px 16px;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	border: 3px solid #414a4f;
+	border-radius: 3px;
+	background-color: rgba(65, 74, 79, .05);
+
 }
 
 .form-text-desc {
-  margin-bottom: 30px;
-  width: 100%;
-  font-size: 16px;
   min-height: 150px;
-  padding: 10px 20px;
-  border: 3px solid #414a4f;
-  border-radius: 3px;
 }
 
 .form-text:focus, .form-text-desc:focus {
@@ -1191,7 +1145,9 @@ form {
   margin: 0 auto;
   margin-top: 20px;
   background-color: #e6463a;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
   color: #fff;
   padding: 15px 70px;
   text-align: center;
