@@ -54,7 +54,7 @@ html, body {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:focus {
   background: #989D9F;
 }
 
@@ -163,7 +163,6 @@ a.btn:hover, a.contact-btn:hover, a.work-btn:hover {
 		padding: 100px 100px;
 	}
 }
-
 
 @media (max-width: 910px) {
 	.contact {
@@ -455,7 +454,7 @@ header nav li:last-child, #navbar li {
 	.profile {
     display: block;
     float: none;
-		width: 150px;
+		width: 175px;
 		margin: 0 auto;
 		margin-bottom: 20px;
   }
@@ -500,7 +499,7 @@ header nav li:last-child, #navbar li {
 	transition: all 0.3s ease 0s;
 }
 
-.links:hover {
+.links:hover, .links:focus {
 	opacity: 1;
 	border: none;
 }
@@ -554,7 +553,7 @@ a.contact-btn {
 	color: #414a4f;
 }
 
-.work-nav-links:hover {
+.work-nav-links:hover, .work-nav-links:focus {
 	color: #414a4f;
 }
 
@@ -588,7 +587,7 @@ a.contact-btn {
 	transition: all 0.3s ease 0s;
 }
 
-.work-git:hover {
+.work-git:hover, .work-git:focus {
 	opacity: 1;
 	border: none;
 }
@@ -743,7 +742,7 @@ a.contact-btn {
 	margin-bottom: 2.5em;
 }
 
-.individual-work-image:hover {
+.individual-work-image:hover, .individual-work-image:focus {
 	border-radius: 12px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -758,7 +757,7 @@ a.contact-btn {
 	transition: all 0.3s;
 }
 
-.individual-work-image:hover img {
+.individual-work-image:hover img, .individual-work-image:focus img {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -779,7 +778,7 @@ a.contact-btn {
 	transition: all .2s ease;
 }
 
-.view-project-btn:hover {
+.view-project-btn:hover, .view-project-btn:focus {
 	background-color: #414a4f;
 }
 
@@ -863,7 +862,7 @@ a.contact-btn {
 	overflow: hidden;
 }
 
-.portfolio ul li h2 a:hover {
+.portfolio ul li h2 a:hover, .portfolio ul li h2 a:focus {
 	color: #ea6258;
 	opacity: 1;
 	border-bottom: 2px solid;
@@ -1045,7 +1044,7 @@ a.contact-btn {
 	opacity: 0;
 }
 
-.work-container:hover .overlay {
+.work-container:hover .overlay, .work-container:focus .overlay {
 	opacity: 1;
 }
 
@@ -1058,7 +1057,7 @@ a.contact-btn {
 	border-radius: 12px;
 }
 
-.work-container:hover .overlay-left {
+.work-container:hover .overlay-left, .work-container:focus .overlay-left {
 	width: 100%;
 	opacity: 1;
 
@@ -1098,7 +1097,7 @@ a.contact-btn {
 	-moz-transition: all .3s ease;
 }
 
-.overlay-button:hover {
+.overlay-button:hover, .overlay-button:focus {
 	-webkit-animation: bounceIn .5s;
 	animation: bounceIn .5s;
 	background-color: #555;
@@ -1207,7 +1206,7 @@ form {
   outline: 0;
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .submit-btn:focus {
 	background-color: #414a4f;
 }
 
@@ -1248,7 +1247,7 @@ footer {
 	transition: all 0.3s ease;
 }
 
-.fa:hover {
+.fa:hover, .fa:focus {
 	opacity: 1;
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -1266,7 +1265,7 @@ footer {
 	transition: all 0.3s ease 0s;
 }
 
-.git:hover {
+.git:hover, .git:focus {
 	opacity: 1;
 	border: none;
 }
