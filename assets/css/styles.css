@@ -363,10 +363,15 @@ header nav li:last-child, #navbar li {
 .background-image {
 	max-width: 100%;
 	height: 100%;
-	background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-width: 1100px) {
+	.background-image {
+		background-attachment: fixed; /* maybe fix so you do not have to put this in a media query later in order for parallax to also work on mobile */
+	}
 }
 
 @media screen and (min-width: 700px) {
