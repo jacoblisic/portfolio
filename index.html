@@ -124,7 +124,7 @@
     <section class="contact form-animation" data-delighter id="contact">
       <h2 class="contact-h2">Contact Me</h2>
       <form action="https://formspree.io/jacoblisic@gmail.com"
-      method="POST" id="contactForm">
+      method="POST" id="contactForm" action="backEndServiceUrl">
         <div class="form-field-group">
           <div class="form-div">
             <label class="form-label">First Name</label>
@@ -146,7 +146,8 @@
             <textarea class="form-text-desc" name="message" /></textarea>
           </div>
         </div>
-        <input type="submit" class="submit-btn" value="Send" />
+        <input type="submit" class="submit-btn g-recaptcha" value="Send" data-sitekey="6Ld9HGAUAAAAAHhfyF_VkeXZC0Sb9SJEspggfDl1" data-callback="onSend" />
+        <!-- class=" g-recaptcha" data-sitekey="6Ld9HGAUAAAAAHhfyF_VkeXZC0Sb9SJEspggfDl1" data-callback="YourOnSubmitFn" -->
       </form>
     </section>
 
@@ -172,6 +173,12 @@
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <!-- reCAPTCHA -->
+    <script type="text/javascript">
+      var onSend = function(response) {
+        document.getElementById("contactForm").submit(); // send response to your backend service
+      };
+    </script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113910268-1"></script>
     <script>
