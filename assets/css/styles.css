@@ -1133,7 +1133,7 @@ form {
 	border: 3px solid #414a4f;
 	border-radius: 3px;
 	background-color: rgba(65, 74, 79, .05);
-
+	outline: 0;
 }
 
 .form-text-desc {
@@ -1141,6 +1141,7 @@ form {
 }
 
 .form-text:focus, .form-text-desc:focus {
+	outline: 0;
 	border: 3px solid #e6463a;
 }
 
