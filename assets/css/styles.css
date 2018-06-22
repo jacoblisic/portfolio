@@ -136,6 +136,11 @@ a.btn:hover, a.contact-btn:hover, a.work-btn:hover {
 	transform: scale(1.1);
 }
 
+a.btn:hover, a.work-btn:hover {
+	color: #e6463a;
+	background-color: #fff;
+}
+
 .fill:before {
   content: "";
   position: absolute;
