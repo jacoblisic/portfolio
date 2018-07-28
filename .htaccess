@@ -1,0 +1,14 @@
+# One year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+# One month for js
+<filesMatch ".(js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# One week for css
+<filesMatch ".(css)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
