@@ -79,7 +79,7 @@ a {
   transition:.3s ease-in-out;
 	line-height: 1.5;
 	border-top: solid 5px transparent;
-	border-bottom: 5px solid transparent;
+	border-bottom: 10px solid transparent;
 }
 
 .nav-links:hover, .navlinks:focus {
@@ -481,6 +481,7 @@ header nav li:last-child, #navbar li {
   font-size: 18px;
   text-align: left;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 .about-h2 {
@@ -844,6 +845,7 @@ a.contact-btn {
 	line-height: 2;
 	letter-spacing: .5px;
 	font-size: 16px;
+	font-weight: 300;
 }
 
 .individual-right ul {
@@ -851,6 +853,7 @@ a.contact-btn {
 	padding: 0 10px;
 	max-width: 700px;
 	font-size: 16px;
+	font-weight: 300;
 	line-height: 1.5;
 	letter-spacing: .5px;
 }
@@ -981,10 +984,15 @@ a.contact-btn {
 ----------*/
 
 .main-work-container {
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
 	justify-content: center;
-	align-items: center;
 }
 
 .work-container {
@@ -1045,6 +1053,7 @@ a.contact-btn {
 .overlay-p {
 	text-align: center;
 	font-size: 16px;
+	font-weight: 300;
 	color: #555;
 	line-height: 1.5;
 	margin: 0;
@@ -1052,10 +1061,13 @@ a.contact-btn {
 }
 
 .overlay-button {
-	letter-spacing: .5px;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
 	width: 160px;
 	text-align: center;
 	color: #ffffff;
+	text-transform: uppercase;
 	padding: 10px 15px;
 	border-radius: 3px;
 	background-color: #e6463a;
@@ -1068,6 +1080,7 @@ a.contact-btn {
 	-webkit-animation: bounceIn .5s;
 	animation: bounceIn .5s;
 	background-color: #555;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -1109,7 +1122,7 @@ form {
 
 .form-animation {
 	opacity: 0;
-	transition: .3s all ease-in-out;
+	transition: .5s all ease-in-out;
 	transform: translateY(10%);
 }
 
@@ -1203,38 +1216,57 @@ footer {
   text-align: center;
 }
 
+.white-footer {
+	background-color: #ffffff;
+}
+
 .center-footer {
 	padding: 3.5em;
 }
 
-.fa {
-  color: #fff;
-  padding: 10px;
-	opacity: .9;
-	transition: all 0.3s ease;
-}
-
-.fa:hover, .fa:focus {
-	opacity: 1;
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
+.footer-text, .dark-footer-text {
+	margin-bottom: 40px;
 }
 
 .footer-text {
   color: #fff;
 }
 
+.dark-footer-text {
+	color: #414a4f;
+}
+
+.footer-icons, .dark-footer-icons {
+	width: 50px;
+	padding: 10px;
+	transition: all 0.3s ease;
+}
+
+.footer-icons:hover, .footer-icons:focus, .dark-footer-icons:hover, .dark-footer-icons:focus {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
 .git {
 	color: #fff;
-	opacity: .9;
+}
+
+.gitd {
+	color: #414a4f;
+}
+
+.git, .gitd {
+	opacity: 1;
 	border-bottom: 2px solid;
 	transition: all 0.3s ease 0s;
 }
 
-.git:hover, .git:focus {
-	opacity: 1;
+.git:hover, .git:focus, .gitd:hover, .gitd:focus {
 	border: none;
+}
+
+.p1, .p2 {
+	font-weight: 300;
 }
 
 .p1 {
