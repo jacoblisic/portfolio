@@ -1237,7 +1237,7 @@ footer {
 }
 
 .footer-icons, .dark-footer-icons {
-	width: 45px;
+	width: 40px;
 	padding: 10px;
 	transition: all 0.3s ease;
 }
