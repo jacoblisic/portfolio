@@ -1237,7 +1237,7 @@ footer {
 }
 
 .footer-icons, .dark-footer-icons {
-	width: 50px;
+	width: 45px;
 	padding: 10px;
 	transition: all 0.3s ease;
 }
@@ -1247,6 +1247,14 @@ footer {
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
+
+@media (min-width: 500px) {
+	.footer-icons {
+		width: 50px;
+		padding: 10px;
+	}
+}
+
 .git {
 	color: #fff;
 }
