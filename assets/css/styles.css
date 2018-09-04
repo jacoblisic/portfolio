@@ -1144,7 +1144,7 @@ form {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	width: 100%;
-	border: 3px solid #414a4f;
+	border: 1.5px solid #414a4f;
 	border-radius: 3px;
 	background-color: rgba(65, 74, 79, .05);
 	outline: 0;
@@ -1156,7 +1156,7 @@ form {
 
 .form-text:focus, .form-text-desc:focus {
 	outline: 0;
-	border: 3px solid #e6463a;
+	border: 1.5px solid #e6463a;
 }
 
 .submit-btn {
