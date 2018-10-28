@@ -1077,8 +1077,6 @@ a.contact-btn {
 }
 
 .overlay-button:hover, .overlay-button:focus {
-	-webkit-animation: bounceIn .5s;
-	animation: bounceIn .5s;
 	background-color: #555;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -1249,7 +1247,7 @@ footer {
 }
 
 @media (min-width: 500px) {
-	.footer-icons {
+	.footer-icons, .dark-footer-icons {
 		width: 50px;
 		padding: 10px;
 	}
