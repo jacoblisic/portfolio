@@ -451,7 +451,7 @@ header nav li:last-child, #navbar li {
 	border-radius: 50%;
 	width: 250px;
 	float: left;
-	margin: 25px;
+	margin: 15px 25px 15px 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -490,7 +490,7 @@ header nav li:last-child, #navbar li {
   padding-bottom: 50px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 825px) {
 	.about p {
 		font-size: 20px;
 	}
