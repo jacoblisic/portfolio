@@ -459,17 +459,17 @@ header nav li:last-child, #navbar li {
 	.profile {
     display: block;
     float: none;
-		width: 175px;
+		width: 200px;
 		margin: 0 auto;
 		margin-bottom: 20px;
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 699px) {
+/* @media only screen and (min-width: 601px) and (max-width: 699px) {
 	.profile {
 		width: 150px;
 	}
-}
+} */
 
 @media only screen and (min-width: 700px) and (max-width: 790px) {
 	.profile {
