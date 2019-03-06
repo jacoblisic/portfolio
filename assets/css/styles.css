@@ -478,7 +478,7 @@ header nav li:last-child, #navbar li {
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -492,7 +492,7 @@ header nav li:last-child, #navbar li {
 
 @media (min-width: 825px) {
 	.about p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.about-h2 {
 		font-size: 55px;
@@ -1166,7 +1166,7 @@ form {
 	font-weight: 800;
 	text-transform: uppercase;
   color: #fff;
-  padding: 15px 70px;
+  padding: 15px 0px;
   text-align: center;
   border-radius: 3px;
   border: none;
