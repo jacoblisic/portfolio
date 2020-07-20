@@ -2,19 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
-    <meta name="description" content="Jacob Lisic is a User Interface (UI)/User Experience (UX) Designer in the Cleveland/Akron, Ohio area.">
+    <!-- CSS Styles -->
+    <link href="assets/css/global.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta name="description" content="Jacob Lisic is a Digital Designer in the Akron, Ohio area.">
     <meta http-equiv="Expires" content="30" />
     <meta property='og:title' content='Portfolio' />
-    <meta property='og:image' content='assets/img/logo.svg' />
-    <meta property='og:description' content='Click here to visit the portfolio website for Jacob Lisic.' />
+    <meta property='og:image' content='assets/img/logo-2020.svg' />
+    <meta property='og:description' content='Click here to get in touch with Jacob Lisic.' />
     <meta property='og:url' content='https://jacoblisic.com' />
 
     <title>Jacob Lisic | Home</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <script src="https://use.fontawesome.com/dce1aa1665.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,800&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -33,163 +32,23 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <meta name="color-scheme" content="dark light">
   </head>
   <body>
-  <!--
-    <div class="progress-header">
-      <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
-    </div>
-  -->
-  	<header>
-      <a href="index.html"><img src="assets/img/logo.svg" alt="logo" class="logo" /></a>
-  		<nav>
-    		<li><a href="#about" class="nav-links">About</a></li>
-  			<li><a href="work.html" class="nav-links">Work</a></li>
-  			<li><a href="#contact" class="nav-links">Contact</a></li>
-  		</nav>
-  	</header>
-  <!--
-    <div id="navbar">
-      <a href="index.html"><img src="assets/img/lisiclogo.svg" alt="logo" class="logo" /></a>
-      <li><a href="#about" class="nav-links">About</a></li>
-      <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
-      <li><a href="#contact" class="nav-links">Contact</a></li>
-    </div>
-  -->
-
-  	<section class="welcome" id="welcome">
-  		<div class="background-image" style="background-image: url(assets/img/codebck.jpg);"></div>
-  		<h1>Hi, I'm Jacob.</h1>
-  		<h3>UX, Design, and Development.</h3>
-  		<a href="#portfolio" class="btn">View my Work</a>
-      <!--<div class="scroll-indicator fa fa-chevron-down"></div>-->
-  	</section>
-
-    <section class="about form-animation" data-delighter id="about">
-      <h2 class="about-h2">About Me</h2>
-
-      <div class="float">
-        <img src="assets/img/headshot.jpg" alt="Image of Jacob Lisic" class="profile" />
-        <p>Hi, my name is Jacob Lisic. I am a web designer and developer based out of Northeast Ohio. I graduated from Kent State University this past May with my Bachelor of Science degree in <a href="https://www.kent.edu/dsci" class="links" target="_blank" rel="noopener">Digital Sciences</a> and a minor in User Experience Design.</p>
-
-        <p>I have a few years of experience in the web field due to my time at <a href="https://ideabasekent.com/" target="_blank" rel="noopener" class="links">IdeaBase</a> as a Digital Project Manager and <a href="http://www.igpr.com/" target="_blank" rel="noopener" class="links">The Impact Group</a> as a User Experience Intern.</p>
-      </div>
-
-      <p>I am currently looking for a full-time position related to UI/UX Design and Front-End Web Development. I am seeking a challenging position that allows me to utilize my skills, while also enabling me to grow as a professional.</p>
-
-      <p>I primarily focus on HTML, CSS, and UI/UX design to create responsive, mobile-first websites. I am also experienced in leadership, project management, and technical communication.</p>
-
-      <h3>Want to learn more about me?</h3>
-      <a href="assets/docs/lisic_resume.pdf" target="_blank" rel="noopener" class="contact-btn fill">View my résumé</a><br />
-    </section>
-
-    <section class="portfolio" data-delighter id="portfolio">
-      <h2>My Work</h2>
-      <div class="main-work-container">
-
-          <div class="work-container">
-              <img src="assets/img/connections.png" alt="Connections" class="project-image" />
-              <div class="overlay overlay-left">
-                <div class="overlay-content">
-                  <p class="overlay-p">Connections is an app that my capstone group and I designed during the Spring 2019 semester.</p>
-                  <br />
-                  <a href="connections.html" class="overlay-button">Learn more</a>
-                </div>
-              </div>
-            </div>
-
-        <div class="work-container">
-          <img src="assets/img/schoolcollab.png" alt="School Collaborative" class="project-image" />
-          <div class="overlay overlay-left">
-            <div class="overlay-content">
-              <p class="overlay-p">A website I designed for the new Kent State and Akron Children's Hospital collaborative.</p>
-              <br />
-              <a href="school-collaborative.html" class="overlay-button">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="work-container">
-          <img src="assets/img/apccard.png" alt="Appreciology" class="project-image" />
-          <div class="overlay overlay-left">
-            <div class="overlay-content">
-              <p class="overlay-p">A new website created for the upcoming book about Appreciology.</p>
-              <br />
-              <a href="appreciology.html" class="overlay-button">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <a href="work.html" class="work-btn">View all work</a>
-    </section>
-
-    <section class="contact form-animation" data-delighter id="contact">
-      <h2 class="contact-h2">Contact Me</h2>
-      <form action="https://formspree.io/jacoblisic@gmail.com"
-      method="POST" id="contactForm">
-        <div class="form-field-group">
-          <div class="form-div">
-            <label for="firstname" class="form-label">First Name</label>
-            <input id="firstname" class="form-text" type="text" name="firstname"/>
-          </div>
-          <div class="form-div">
-            <label for="lastname" class="form-label">Last Name</label>
-            <input id="lastname" class="form-text" type="text" name="lastname"/>
-          </div>
-          <div class="form-div">
-            <label for="email" class="form-label">Email</label>
-            <input id="email" class="form-text" type="email" name="email"/>
-          </div>
-          <div class = "form-div">
-            <label for="phonenumber" class="form-label">Phone Number</label>
-            <input id="phonenumber" class="form-text" type="tel" name="phonenumber"/>
-          </div>
-            <label for="message" class="form-label">Description</label>
-            <textarea id="message" class="form-text-desc" name="message" /></textarea>
-          </div>
-        </div>
-        <input type="submit" class="submit-btn" value="Send Message" />
-      </form>
-    </section>
-
-    <footer>
-      <div class="center-footer">
-      <a href="index.html"><img src="assets/img/logo.svg" alt="logo" class="logo" /></a>
-      <p class="footer-text p1">Website coded by me. View it on <a href="https://github.com/jacoblisic/portfolio" rel="noopener" target="_blank" class="git">Github</a>.</p>
-      <!--<p class="footer-text p2"><img src="assets/icons/copyright.svg" class="copyright-icon"/>Jacob Lisic 2018.</p>-->
-      <a href="https://github.com/jacoblisic" rel="noopener" target="_blank"><img src="assets/icons/github.svg" class="footer-icons"/></a>
-      <a href="https://codepen.io/jlisic/" rel="noopener" target="_blank"><img src="assets/icons/codepen.svg" class="footer-icons"/></a>
-      <a href="http://www.linkedin.com/in/jacoblisic" rel="noopener" target="_blank"><img src="assets/icons/linkedin.svg" class="footer-icons"/></a>
-      <a href="https://twitter.com/J_Lisic" rel="noopener" target="_blank"><img src="assets/icons/twitter.svg" class="footer-icons"/></a>
-      <a href="mailto:jacoblisic@gmail.com"><img src="assets/icons/mail.svg" class="footer-icons"/></a>
-      </div>
-    </footer>
-
-    <!-- <footer>
-      <div class="center-footer">
-      <img src="assets/icons/responsive.svg" class="footer-image"/>
-      <a href="index.html"><img src="assets/img/logo.svg" alt="logo" class="logo" /></a>
-      <p class="footer-text p1">Website coded by me. View it on <a href="https://github.com/jacoblisic/portfolio" rel="noopener" target="_blank" class="git">Github</a>.</p>
-      <p class="footer-text p2"><img src="assets/icons/copyright.svg" class="copyright-icon"/>Jacob Lisic 2018.</p>
-      <a href="https://github.com/jacoblisic" rel="noopener" target="_blank"><img src="assets/icons/github.svg" class="footer-icons"/></a>
-      <a href="https://codepen.io/jlisic/" rel="noopener" target="_blank"><img src="assets/icons/codepen.svg" class="footer-icons"/></a>
-      <a href="http://www.linkedin.com/in/jacoblisic" rel="noopener" target="_blank"><img src="assets/icons/linkedin.svg" class="footer-icons"/></a>
-      <a href="https://twitter.com/J_Lisic" rel="noopener" target="_blank"><img src="assets/icons/twitter.svg" class="footer-icons"/></a>
-      <a href="mailto:jacoblisic@gmail.com"><img src="assets/icons/mail.svg" class="footer-icons"/></a>
-      </div>
-    </footer> -->
-
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Link for stylessheet -->
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:300,400" rel="stylesheet">
+    <header>
+      <nav role="primary navigation" aria-label="primary">
+          <a href="index.html"><img src="assets/img/logo-2020.svg" alt="Jacob Lisic Logo" /></a>
+      </nav>
+    </header>
+    <main>
+      <h1>Hey there!</h1>
+      <p>I’m Jacob Lisic – a Digital Designer based out of Akron, Ohio, graduate of Kent State University and an avid technologist.</p>
+      <p>I currently work full-time for a <a href="https://www.cfpetinsurance.com/">pet insurance company</a> located in Akron, Ohio and as a web consultant in my spare time.</p>
+      <p>I'm working on a brand new website as we speak so come back soon to check it out! &#128526;</p>
+      <p>In the meantime, you can reach me via email <a href="mailto:jacoblisic@gmail.com">here</a>. Or if you aren't the biggest fan of email, you can reach me on <a href="https://twitter.com/J_Lisic">Twitter</a> or <a href="https://www.linkedin.com/in/jacoblisic/">LinkedIn</a>.</p>
+    </main>
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+    <!-- <script type="text/javascript" src="scripts/script.js"></script> -->
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113910268-1"></script>
     <script>

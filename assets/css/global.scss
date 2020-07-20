@@ -1,0 +1,149 @@
+//Add differnt theme color options based on SVGs and CSS variavbles. Make a theme toggle menu wlike the twitter menu
+
+//COLORS
+$red__primary: #F9322D;
+$red__highlight: #ee7e76;
+$gray__primary: #414a4f;
+$gray__secondary: #555;
+$white: #fff;
+$black__primary: #161A1B;
+$black__secondary: #0A0C0D;
+//#545C60
+//#ea6258
+//#e6463a
+
+// FONTS
+$roboto: 'Roboto Condensed', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+// Global CSS
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body {
+	display: block;
+	overflow: auto;
+}	
+
+body {
+	font-family: $raleway;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: .5px;
+	padding: 1em;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: $black__primary;
+		color: $black__primary;
+	}
+
+	header {
+		top: 0;
+		padding: 1em;
+
+		nav {
+			display: flex;
+			justify-content: center;
+
+			@media (prefers-color-scheme: dark) {
+				background-color: $black__primary;
+			} 
+
+			a {
+				display: inherit;
+
+				img {
+					width: 75px;
+					align-self: flex-start;
+				}
+			}
+		}
+	}
+
+	main {
+
+		h1 {
+			color: $red__primary;
+			font-family: $roboto;
+			font-size: 2em;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: .25em;
+		}
+
+		p {
+			color: $black__primary;
+			font-size: 2em;
+			font-weight: 700;
+			margin-bottom: 1em;
+
+			@media screen and (min-width: 768px) {
+				font-size: 3em;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				color: $white;
+			}
+		}
+	}
+
+	a {
+		color: $red__primary;
+		font-weight: 600;
+		text-decoration-color: $black__secondary;
+		text-decoration-thickness: .2em;
+		transition: .15s ease-in;
+
+		@media (prefers-color-scheme: dark) {
+			text-decoration-color: $white;
+		}
+
+		&:hover {
+			color: $black__primary;
+			text-decoration-color: $red__primary;
+
+			@media (prefers-color-scheme: dark) {
+				color: $white;
+			}
+		}
+		
+		&:active {
+			color: $black__primary;
+			text-decoration-color: $red__primary;
+
+			@media (prefers-color-scheme: dark) {
+				color: $white;
+			}
+		}
+
+		&:focus {
+			color: $black__primary;
+			text-decoration-color: $red__primary;
+			border: 1px dashed $black__primary;
+
+			@media (prefers-color-scheme: dark) {
+				color: $white;
+				border: 1px dashed $white;
+			}
+		}
+	}
+}
+// End Global CSS 
+
+// Custom Highlight Color
+::selection {
+	background: $red__highlight;
+	color: $white;
+}
+
+::-moz-selection {
+	background: $red__highlight;
+}
+// End Custom Highlight Color 
