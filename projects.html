@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
     <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
+    <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&family=Roboto+Condensed:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&family=Roboto+Condensed:wght@700&display=swap" media="print" onload="this.media='all'" />
     <noscript>
@@ -13,15 +14,15 @@
     <!-- CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/global.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/css/homepage.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/css/projects.css" rel="stylesheet" type="text/css" media="screen" />
     <meta name="description" content="Jacob Lisic is a Digital Designer in the Akron, Ohio area.">
     <meta name="keywords" content="digital design, digital designer, web designer, interaction design, user interface design, design, digital, akron, ohio">
-    <meta property='og:title' content='Portfolio' />
+    <meta property='og:title' content='Jacob Lisic | Home' />
     <meta property='og:image' content='assets/img/lightMode-logo.svg' />
-    <meta property='og:description' content='Click here to get in touch with Jacob Lisic.' />
-    <meta property='og:url' content='https://jacoblisic.com' />
+    <meta property='og:description' content='Learn more about Jacob Lisic - a Digital Designer in the Akron, Ohio area.' />
+    <meta property='og:url' content='https://jacoblisic.com/pages/about.html' />
 
-    <title>Jacob Lisic | Home</title>
+    <title>Jacob Lisic | Projects</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -48,7 +49,7 @@
     <header class="header">
       <nav role="navigation" aria-label="primary" aria-labelledby="primary-navigation">
         <div class="logo-themeToggle-container">
-          <a href="index.html" aria-label="Home" aria-current="page">
+          <a href="index.html" aria-label="Home">
             <span class="hide">Jacob Lisic Home</span>
             <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" />
             <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
@@ -58,76 +59,65 @@
           </button>
         </div>
         <ul class="nav" id="nav" role="menubar" aria-label="primary">
-          <li class="nav-item" role="none"><a href="about.html" role="menuitem"  >About</a></li>
-          <li class="nav-item" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+          <li class="nav-item" role="none"><a href="about.html" role="menuitem">About</a></li>
+          <li class="nav-item" role="none"><a href="projects.html" role="menuitem" aria-current="page">Projects</a></li>
           <li class="nav-item" role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <!-- Heading -->
-      <section class="heading-container">
-        <div class="heading">
-          <div role="none">
-            <h1 data-aos="zoom-in-down" data-aos-duration="800">Hi there, I'm Jacob.</h1>
-            <h2 data-aos="zoom-in-up" data-aos-duration="1000"><span class="green-text">Digital Designer</span> based in Akron, Ohio.</h2>
+    <main class="section-spacing">
+        <section class="heading" >
+            <h1>My <span class="green-text">projects</span>.</h1>
+            <p>Below, you'll find a list of recent projects I have worked on. More projects will be available soon but are available by request for the time being.</p>
+        </section>
+        <section class="accordion-container">
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">Member Center Refresh</button>
+          <div class="panel">
+            <sup><span>Timeline:</span> September 2019 – February 2020</sup>
+            <p>The Member Center Refresh was the first large project I had the opportunity to work on at C&F Pet. It is the home to multiple pet insurance brands for thousands of customers across the U.S.</p>
+            <p>As the primary designer and front-end developer on the project, I was tasked with redesigning and building out new features such as notifications, a new dashboard interface and an easier claim submission process.</p>
+            <p>I collaborated with other designers to gain feedback, ideas and insights. I worked with a back-end developer to ensure our code seemlessly worked together. This project was built with HTML, Less (CSS), and the Umbraco CMS.</p>
+            <a href="https://www.aspcapetinsurance.com/portal/#/login" class="content-link" target="_blank" rel="noopener noreferrer">Visit the Member Center</a>
           </div>
-          <img src="assets/img/profile-homepage.png" alt="Jacob Profile" class="profile-img" data-aos="fade-right" data-aos-duration="800" />
-        </div>
-      </section>
-      <!-- End Heading -->
 
-      <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom" class="block-quote" role="section">
-        <p>I’m passionate about designing &amp; developing user interfaces that shape the next generation of the web.</p>
-        <div role="none">
-          <a href="pages/about.html" title="About Me" class="primary-link">Learn About Me</a>
-        </div>
-      </div>
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">CHC Addiction Services</button>
+          <div class="panel">
+            <sup><span>Timeline:</span> Summer 2018</sup>
+            <p>While at my internship, I was asked to create a brand new website for  CHC Addiction Services – a local health center in Akron, Ohio. The website was built using the WordPress CMS and custom HTML and CSS.</p>
+            <p>I designed the website to fit the content the client provided while also creating the site's navigation structure for ease of use.</p>
+            <a href="http://chcaddiction.com/" class="content-link" target="_blank" rel="noopener noreferrer">Visit CHC Addiction Services</a>
+          </div>
 
-      <section class="see-my-work">
-        <h3>Featured <span class="green-text">projects</span>.</h3>
-        <ul class="featured-work-container">
-          <li class="work-one" data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-            <div class="work-content">
-              <h4>Member Center Refresh</h4>
-              <p>A customer portal website hosting claim submissions, policy details and resources for thousands of pet insurance customers, across multiple brands.</p>
-            </div>
-            <a href="projects.html" class="work-link">View Project ></a>
-          </li>
-          <li class="work-two" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-            <div class="work-content">
-              <h4>CHC Addiction Services</h4>
-              <p>A local addiction services agency that provides prevention and recovery treatments.</p>
-            </div>
-            <a href="projects.html" class="work-link">View Project ></a>
-          </li>
-          <li class="work-three" data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-            <div class="work-content">
-              <h4>Heritage Classical Academy</h4>
-              <p>Academy in Peninsula, Ohio that provides students with education in a “Christ-centered environment.”</p>
-            </div>
-            <a href="projects.html" class="work-link">View Project ></a>
-          </li>
-        </ul>
-      </section>
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">Heritage Classical Academy</button>
+          <div class="panel">
+            <sup><span>Timeline:</span> Summer 2018</sup>
+            <p>The Heritage Classical Academy website was another new design I worked on at my internship. I was asked to organize content provided by the client and create the site's navigation structure adhering to all of the client's needs. </p>
+            <a href="https://heritageclassicalacademy.org/" class="content-link" target="_blank" rel="noopener noreferrer">Visit Heritage Classical Academy</a>
+          </div>
 
-      <!-- <section class="review section-spacing" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-        <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </blockquote>
-        <span class="blockquote-person">– First Last, Company Name</span>
-      </section> -->
-
-      <section class="lets-create section-spacing" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
-        <h3>Let's <span class="green-text">create</span>.</h3>
-        <p>I help my clients create amazing web experiences for their customers by taking their thoughts and presenting them as a <strong>visual, concise design.</strong> I’m always ready for another challenge so feel free to reach out and we’ll create something to fit the needs of you and your customers.</p>
-        <a href="pages/contact.html" class="button">Get in Touch</a>
-      </section>
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="bottom-bottom">Fun in CodePen</button>
+          <div class="panel">
+            <sup><span>Timeline:</span> Ongoing</sup>
+            <p>Sometimes to practice and to learn new skills, I like to mess around with CSS and create fun items to share on the web. Here are a couple of examples I've created on CodePen.</p>
+            <p class="codepen" data-height="320" data-theme-id="dark" data-default-tab="result" data-user="jlisic" data-slug-hash="rKqEKr" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Simple CSS Buttons">
+              <span>See the Pen <a href="https://codepen.io/jlisic/pen/rKqEKr">
+              Simple CSS Buttons</a> by Jacob Lisic (<a href="https://codepen.io/jlisic">@jlisic</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <p class="codepen" data-height="320" data-theme-id="dark" data-default-tab="result" data-user="jlisic" data-slug-hash="xJwdOv" style="height: 320px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Form">
+              <span>See the Pen <a href="https://codepen.io/jlisic/pen/xJwdOv">
+              CSS Form</a> by Jacob Lisic (<a href="https://codepen.io/jlisic">@jlisic</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <p class="something-new">I'm always working on something new so feel free to check here again sometime soon to look at my new projects! Plus, I've got a new, more in-depth project page coming soon.</p>
+        </section>
     </main>
     <footer role="contentinfo" aria-label="Footer">
       <div class="footer-container">
         <div class="footer-logo-container">
-          <a href="index.html" aria-label="Home" aria-current="page">
+          <a href="index.html" aria-label="Home">
             <span class="hide">Jacob Lisic Logo</span>
             <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
           </a>
@@ -139,7 +129,7 @@
         <nav role="navigation" tab-index="0" aria-labelledby="footer-navigation">
           <ul role="menubar">
             <li role="none"><a href="about.html" role="menuitem">About</a></li>
-            <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+            <li role="none"><a href="projects.html" role="menuitem" aria-current="page">Projects</a></li>
             <li role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
           </ul>
         </nav>
@@ -181,6 +171,8 @@
 
     <!-- JavaScript -->
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="accordion.js"></script>
+
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113910268-1"></script>
     <script>

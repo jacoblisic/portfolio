@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
     <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
+    <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&family=Roboto+Condensed:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&family=Roboto+Condensed:wght@700&display=swap" media="print" onload="this.media='all'" />
     <noscript>
@@ -13,15 +14,15 @@
     <!-- CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/global.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/css/homepage.css" rel="stylesheet" type="text/css" media="screen" />
-    <meta name="description" content="Jacob Lisic is a Digital Designer in the Akron, Ohio area.">
+    <link href="assets/css/about.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta name="description" content="Learn more about Jacob Lisic - a Digital Designer in the Akron, Ohio area.">
     <meta name="keywords" content="digital design, digital designer, web designer, interaction design, user interface design, design, digital, akron, ohio">
     <meta property='og:title' content='Portfolio' />
     <meta property='og:image' content='assets/img/lightMode-logo.svg' />
     <meta property='og:description' content='Click here to get in touch with Jacob Lisic.' />
-    <meta property='og:url' content='https://jacoblisic.com' />
+    <meta property='og:url' content='https://jacoblisic.com/pages/about.html' />
 
-    <title>Jacob Lisic | Home</title>
+    <title>Jacob Lisic | About</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -48,7 +49,7 @@
     <header class="header">
       <nav role="navigation" aria-label="primary" aria-labelledby="primary-navigation">
         <div class="logo-themeToggle-container">
-          <a href="index.html" aria-label="Home" aria-current="page">
+          <a href="index.html" aria-label="Home">
             <span class="hide">Jacob Lisic Home</span>
             <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" />
             <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
@@ -58,76 +59,43 @@
           </button>
         </div>
         <ul class="nav" id="nav" role="menubar" aria-label="primary">
-          <li class="nav-item" role="none"><a href="about.html" role="menuitem"  >About</a></li>
+          <li class="nav-item" role="none"><a href="about.html" role="menuitem" aria-current="page">About</a></li>
           <li class="nav-item" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
           <li class="nav-item" role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <!-- Heading -->
-      <section class="heading-container">
-        <div class="heading">
-          <div role="none">
-            <h1 data-aos="zoom-in-down" data-aos-duration="800">Hi there, I'm Jacob.</h1>
-            <h2 data-aos="zoom-in-up" data-aos-duration="1000"><span class="green-text">Digital Designer</span> based in Akron, Ohio.</h2>
+      <section class="about">
+          <div class="tablet-h1-container">
+              <h1 class="tablet-h1" data-aos="zoom-in-down" data-aos-duration="1000">Creating <span>impactful user interfaces</span> from the ground up.</h1> 
           </div>
-          <img src="assets/img/profile-homepage.png" alt="Jacob Profile" class="profile-img" data-aos="fade-right" data-aos-duration="800" />
-        </div>
+          <div class="about-container">
+              <div class="about-content section-spacing">
+                  <h1 class="mobile-desktop-h2" data-aos="zoom-in-down" data-aos-duration="1000">Creating <span>impactful user interfaces</span> from the ground up.</h1> <!-- that last. -->
+                  <div data-aos="zoom-in-up" data-aos-duration="1500">
+                    <p>Hi, I'm Jacob Lisic. I'm a Digital Designer based in Akron, Ohio.</p>
+                    <p>I graduated from Kent State Univerity in 2019 with a Bachelor of Science degree in Digital Sciences - Digital Systems Interaction and a minor in UX Design. Since then, I have been a part of an amazing team at Crum & Forster Pet Insurance &#128021; in Akron, Ohio.</p>
+                    <p>I'm humbled each day that I have the opportunity to work on designing interfaces for better user interaction. I have been passionate about technology my whole life and love that I am able to use technology as part of my job.</p>
+                  </div>
+              </div>
+              <img src="assets/img/profile-about.jpg" alt="Photo of Jacob Lisic" data-aos="zoom-in-up" data-aos-duration="1500" />
+          </div>
       </section>
-      <!-- End Heading -->
-
-      <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom" class="block-quote" role="section">
-        <p>I’m passionate about designing &amp; developing user interfaces that shape the next generation of the web.</p>
-        <div role="none">
-          <a href="pages/about.html" title="About Me" class="primary-link">Learn About Me</a>
-        </div>
-      </div>
-
-      <section class="see-my-work">
-        <h3>Featured <span class="green-text">projects</span>.</h3>
-        <ul class="featured-work-container">
-          <li class="work-one" data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-            <div class="work-content">
-              <h4>Member Center Refresh</h4>
-              <p>A customer portal website hosting claim submissions, policy details and resources for thousands of pet insurance customers, across multiple brands.</p>
-            </div>
-            <a href="projects.html" class="work-link">View Project ></a>
-          </li>
-          <li class="work-two" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-            <div class="work-content">
-              <h4>CHC Addiction Services</h4>
-              <p>A local addiction services agency that provides prevention and recovery treatments.</p>
-            </div>
-            <a href="projects.html" class="work-link">View Project ></a>
-          </li>
-          <li class="work-three" data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-            <div class="work-content">
-              <h4>Heritage Classical Academy</h4>
-              <p>Academy in Peninsula, Ohio that provides students with education in a “Christ-centered environment.”</p>
-            </div>
-            <a href="projects.html" class="work-link">View Project ></a>
-          </li>
-        </ul>
+      <section class="interests fromBottom section-spacing" data-aos="zoom-in-down" data-aos-duration="1200">
+          <h2>My <span class="green-text">interests</span>.</h2>
+          <p>In my spare time, I love to learn as much as I can to excel at my job. I love learning new CSS tricks and anything web design. You will often find me with my family and friends no matter where I am or what I'm doing. I am a brewery aficionado &#127866; and a very passionate tech enthusiast &#128104;&#8205;&#128187;. Whether it's Apple products &#128187;, podcast listening, gaming &#127918;, or PC building, you can always find me playing or tinkering with something.</p>
+          <p>I'm also a really big Steelers fan and LeBron fan. I love to travel when I can and enjoy meeting new people too. If you'd like to get to know me more, feel free to <a href="mailto:jacoblisic@gmail.com" class="content-link">contact me</a>. I'd be happy to chat.</p>
+          <img src="assets/img/banner-image.jpeg" alt="Jacob overlooking his favorite city, Pittsburgh" loading="lazy" data-aos="zoom-out" data-aos-duration="1000" />
       </section>
-
-      <!-- <section class="review section-spacing" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">
-        <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </blockquote>
-        <span class="blockquote-person">– First Last, Company Name</span>
+      <!-- <section class="latest-work-container">
+          show callouts to latest work. could be same block as what's on homepage to click through.
       </section> -->
-
-      <section class="lets-create section-spacing" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
-        <h3>Let's <span class="green-text">create</span>.</h3>
-        <p>I help my clients create amazing web experiences for their customers by taking their thoughts and presenting them as a <strong>visual, concise design.</strong> I’m always ready for another challenge so feel free to reach out and we’ll create something to fit the needs of you and your customers.</p>
-        <a href="pages/contact.html" class="button">Get in Touch</a>
-      </section>
     </main>
     <footer role="contentinfo" aria-label="Footer">
       <div class="footer-container">
         <div class="footer-logo-container">
-          <a href="index.html" aria-label="Home" aria-current="page">
+          <a href="index.html" aria-label="Home">
             <span class="hide">Jacob Lisic Logo</span>
             <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
           </a>
@@ -138,7 +106,7 @@
         </div>
         <nav role="navigation" tab-index="0" aria-labelledby="footer-navigation">
           <ul role="menubar">
-            <li role="none"><a href="about.html" role="menuitem">About</a></li>
+            <li role="none"><a href="about.html" role="menuitem" aria-current="page">About</a></li>
             <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
             <li role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
           </ul>
