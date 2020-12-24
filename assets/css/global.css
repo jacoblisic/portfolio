@@ -156,20 +156,6 @@ body header nav a img {
   z-index: 10;
 }
 
-@media screen and (max-width: 767px) {
-  body header nav .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 1;
-    background-color: var(--gray__dark);
-    width: 100%;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-  }
-}
-
 body header nav .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,7 +447,7 @@ body footer .footer-container .mail-email {
 }
 
 body footer .footer-container .mail-email :first-child {
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 
 body footer .footer-container .mail-email a {
@@ -667,12 +653,6 @@ body.darkmode header nav .logo-themeToggle-container .themeToggle {
 
 body.darkmode header nav .logo-themeToggle-container .themeSwitch {
   background-color: var(--black__dark);
-}
-
-@media screen and (max-width: 767px) {
-  body.darkmode header nav .sticky {
-    background-color: var(--background__secondary);
-  }
 }
 
 body.darkmode .themeToggle .themeSwitch {
