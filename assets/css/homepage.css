@@ -130,6 +130,12 @@ main .block-quote p:before {
   margin-bottom: .25em;
 }
 
+@media screen and (max-width: 767px) {
+  main .block-quote {
+    font-size: 1.25em;
+  }
+}
+
 main .see-my-work {
   background-color: var(--background__secondary);
   padding: 4em 0;
