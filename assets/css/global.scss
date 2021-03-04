@@ -63,7 +63,7 @@ body {
 	background-color: var(--background);
 	color: var(--font_color);
 	font-family: var(--raleway);
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 400;
 	letter-spacing: .5px;
 	margin: 0 auto;
@@ -110,6 +110,11 @@ body {
 					border-radius: 50px;
 					position: relative;
 					cursor: pointer;
+
+					&:focus {
+						outline: 2px solid var(--green);
+						outline-offset: 5px;
+					}
 				  
 					.themeSwitch {
 						background-color: var(--gray__dark);
@@ -127,6 +132,11 @@ body {
 			a {
 				display: inherit;
 
+				&:focus {
+					outline: 2px solid var(--green);
+					outline-offset: 5px;
+				}
+
 				img {
 					display: block;
 					width: 60px;
@@ -135,21 +145,6 @@ body {
 					z-index: 10;
 				}
 			}
-
-			// .sticky {
-			// 	@media screen and (max-width: 767px) {
-			// 		position: fixed;
-			// 		top: 0;
-			// 		width: 100%;
-			// 		opacity: 1;
-			// 		background-color: var(--gray__dark);
-			// 		width: 100%;
-			// 		box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-			// 		-webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-			// 		-moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-			// 	}
-
-			// }
 
 			.nav {
 				display: flex;
@@ -187,13 +182,25 @@ body {
 						}
 
 						@media screen and (min-width: 768px) {
-							&:hover {
+							&:hover, &:active {
 								background-color: var(--green);
 								color: var(--font_color__button);
 								border-radius: 4px;
 								padding: .5em;
 								transform: scale(1.1) rotateZ(-6deg);
 							}
+						}
+
+						&:focus {
+							outline: 2px solid var(--green);
+							outline-offset: 5px;
+						}
+
+						&:focus, &:active {
+							background-color: var(--green);
+							color: var(--font_color__button);
+							border-radius: 4px;
+							padding: .5em;
 						}
 					}
 				}
@@ -204,21 +211,21 @@ body {
 	h3 {
         color: var(--font_color);
         font-family: var(--roboto);
-        font-size: 2.125em;
+        font-size: 2.125rem;
         font-weight: 700;
         margin-bottom: 1.5em;
 
         @media screen and (min-width: 992px) {
-            font-size: 2.75em;
+            font-size: 2.75rem;
         }
     }
 
     h4 {
-        font-size: 1.125em;
+        font-size: 1.125rem;
         margin-bottom: .5em;
 
         @media screen and (min-width: 992px) {
-            font-size: 1.25em;
+            font-size: 1.25rem;
         }
     }
 
@@ -228,7 +235,7 @@ body {
 
     p {
 		color: var(--font_color);
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 24px;
         margin-bottom: 1em;
     }
@@ -247,7 +254,7 @@ body {
 
 		h5 {
 			color: var(--gray);
-			font-size: 1.125em;
+			font-size: 1.125rem;
 			font-family: var(--roboto);
 			margin-bottom: .75em;
 		}
@@ -261,6 +268,11 @@ body {
 			a {
 				display: inherit;
 				margin-right: 1em;
+
+				&:focus {
+					outline: 2px solid var(--gray);
+					outline-offset: 5px;
+				}
 	
 				img {
 					display: block;
@@ -277,7 +289,7 @@ body {
 				color: var(--gray);
 
 				span {
-					font-size: .875em;
+					font-size: .875rem;
 				}
 			}
 		}
@@ -296,7 +308,7 @@ body {
 				}
 
 				h5 {
-					font-size: 1.25em;
+					font-size: 1.25rem;
 					margin-bottom: .5em;
 
 					@media screen and (min-width: 500px) {
@@ -315,16 +327,21 @@ body {
 						margin-right: 2.5em;
 
 						a {
-							font-size: .875em;
+							font-size: .875rem;
 							font-weight: 500;
 							transition: .15s ease all;
 
 							@media screen and (min-width: 768px) {
-								font-size: 1em;
+								font-size: 1rem;
 							}
 
 							&:hover, &:focus, &:active {
 								color: var(--green__via_darkmode);
+							}
+
+							&:focus {
+								outline: 2px solid var(--gray);
+								outline-offset: 5px;
 							}
 						}
 					}
@@ -349,9 +366,9 @@ body {
 					margin-bottom: 2em;
 					max-width: 250px;
 	
-					@media screen and (min-width: 768px) {
-						width: 400px;
-					}
+					// @media screen and (min-width: 768px) {
+					// 	width: 400px;
+					// }
 		
 					img {
 						width: 30px;
@@ -390,6 +407,7 @@ body {
 			}
 	
 			a {
+				display: inline-block;
 				color: var(--gray);
 				letter-spacing: normal;
 				text-transform: none;
@@ -398,17 +416,22 @@ body {
 				&:hover {
 					color: var(--gray);
 				}
+
+				&:focus {
+					outline: 2px solid var(--gray);
+					outline-offset: 5px;
+				}
 	
 				span {
 					font-family: var(--raleway);
-					font-size: .875em;
+					font-size: .875rem;
 					font-weight: 700;
 				}
 			}
 	
 			p {
 				color: var(--gray);
-				font-size: .875em;
+				font-size: .875rem;
 				margin-bottom: .25em;
 			}
 		}
@@ -461,7 +484,7 @@ body {
 		display: inline-block;
 		color: var(--green);
 		font-family: var(--roboto);
-		font-size: 1.125em;
+		font-size: 1.125rem;
 		font-weight: 600;
 		letter-spacing: .5px;
 		text-transform: uppercase;
@@ -528,10 +551,11 @@ body {
 		&:focus {
 			color: var(--font_color);
 			text-decoration-color: var(--green);
-			
+			outline: 2px solid var(--green);
+			outline-offset: 5px;
+
 			&:after {
-				background-color: var(--green);
-				height: 6px;
+				height: 0px;
 			}
 		}
 	}
@@ -541,7 +565,7 @@ body {
 		background-color: var(--green);
 		color: var(--font_color__button);
 		font-family: var(--raleway);
-		font-size: 1em;
+		font-size: 1rem;
 		font-weight: 800;
 		letter-spacing: normal;
 		text-transform: uppercase;
@@ -553,16 +577,22 @@ body {
 		box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
 
 		@media screen and (min-width: 768px) {
-			font-size: 1.125em;
+			font-size: 1.125rem;
 		}
 
-		&:hover, &:focus, &:active {
+		&:hover, &:active {
 			background-color: var(--green__dark);
 			transform: scale(1.1) rotateZ(3deg);
 		}
+
+		&:focus {
+			background-color: var(--green__dark);
+			outline: 2px solid var(--green);
+			outline-offset: 5px;
+		}
 	}
 
-	.hide {
+	.visually-hidden {
 		display: none;
 	}
 }
@@ -623,7 +653,7 @@ body.darkmode {
 	
 			&:after {
 				background-color: var(--green);
-				height: 5px;
+				height: 6px;
 			}
 		}
 		
@@ -632,17 +662,12 @@ body.darkmode {
 
 			&:after {
 				background-color: var(--green);
-				height: 5px;
+				height: 6px;
 			}
 		}
 	
 		&:focus {
 			color: var(--font_color);
-
-			&:after {
-				background-color: var(--green);
-				height: 5px;
-			}
 		}
 	}
 

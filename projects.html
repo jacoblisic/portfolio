@@ -22,7 +22,7 @@
     <meta property='og:description' content='Learn more about Jacob Lisic - a Digital Designer in the Akron, Ohio area.' />
     <meta property='og:url' content='https://jacoblisic.com/pages/about.html' />
 
-    <title>Jacob Lisic | Projects</title>
+    <title>Projects | Jacob Lisic</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -46,13 +46,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header class="header">
+    <div id="skipnav" class="visually-hidden"><a href="#mainContent">Skip navigation</a></div>
+    <header class="header" role="banner">
       <nav role="navigation" aria-label="primary">
         <div class="logo-themeToggle-container">
           <a href="index.html" aria-label="Home">
-            <span class="hide">Jacob Lisic Home</span>
-            <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" />
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
+            <span class="visually-hidden">Jacob Lisic Home</span>
+            <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" aria-hidden="true" />
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
           </a>
           <button id="dark-mode-toggle" class="dark-mode-toggle themeToggle" role="button" aria-label="Toggle Theme">
             <div class="themeSwitch"></div>
@@ -65,13 +66,13 @@
         </ul>
       </nav>
     </header>
-    <main class="section-spacing">
-        <section class="heading" >
-            <h1>My <span class="green-text">projects</span>.</h1>
+    <main class="section-spacing" id="main-content" tabindex="-1">
+        <section class="heading" aria-labelledby="projects-h1">
+            <h1 id="projects-h1">My <span class="green-text">projects</span>.</h1>
             <p>Below, you'll find a list of recent projects I have worked on. More projects will be available soon but are available by request for the time being.</p>
         </section>
-        <section class="accordion-container">
-          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">Member Center Refresh</button>
+        <section class="accordion-container" aria-label="List of my projects">
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom">Member Center Refresh</button>
           <div class="panel">
             <sup><span>Timeline:</span> September 2019 – February 2020</sup>
             <p>The Member Center Refresh was the first large project I had the opportunity to work on at C&F Pet. It is the home to multiple pet insurance brands for thousands of customers across the U.S.</p>
@@ -80,7 +81,7 @@
             <a href="https://www.aspcapetinsurance.com/portal/#/login" class="content-link" target="_blank" rel="noopener noreferrer">Visit the Member Center</a>
           </div>
 
-          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">CHC Addiction Services</button>
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom">CHC Addiction Services</button>
           <div class="panel">
             <sup><span>Timeline:</span> Summer 2018</sup>
             <p>While at my internship, I was asked to create a brand new website for  CHC Addiction Services – a local health center in Akron, Ohio. The website was built using the WordPress CMS and custom HTML and CSS.</p>
@@ -88,14 +89,14 @@
             <a href="http://chcaddiction.com/" class="content-link" target="_blank" rel="noopener noreferrer">Visit CHC Addiction Services</a>
           </div>
 
-          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">Heritage Classical Academy</button>
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">Heritage Classical Academy</button>
           <div class="panel">
             <sup><span>Timeline:</span> Summer 2018</sup>
             <p>The Heritage Classical Academy website was another new design I worked on at my internship. I was asked to organize content provided by the client and create the site's navigation structure adhering to all of the client's needs. </p>
             <a href="https://heritageclassicalacademy.org/" class="content-link" target="_blank" rel="noopener noreferrer">Visit Heritage Classical Academy</a>
           </div>
 
-          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="bottom-bottom">Fun in CodePen</button>
+          <button class="accordion-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">Fun in CodePen</button>
           <div class="panel">
             <sup><span>Timeline:</span> Ongoing</sup>
             <p>Sometimes to practice and to learn new skills, I like to mess around with CSS and create fun items to share on the web. Here are a couple of examples I've created on CodePen.</p>
@@ -114,23 +115,23 @@
           <p class="something-new">I'm always working on something new so feel free to check here again sometime soon to look at my new projects! Plus, I've got a new, more in-depth project page coming soon.</p>
         </section>
     </main>
-    <footer role="contentinfo" aria-label="Footer">
+    <footer role="contentinfo">
       <div class="footer-container">
         <div class="footer-logo-container">
           <a href="index.html" aria-label="Home">
-            <span class="hide">Jacob Lisic Logo</span>
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
+            <span class="visually-hidden">Jacob Lisic Logo</span>
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
           </a>
           <div>
             <h4>Jacob Lisic</h4>
             <span>Digital Designer</span>
           </div>
         </div>
-        <nav role="navigation" tab-index="0">
-          <ul role="menubar">
-            <li role="none"><a href="about.html" role="menuitem">About</a></li>
-            <li role="none"><a href="projects.html" role="menuitem" aria-current="page">Projects</a></li>
-            <li role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
+        <nav role="navigation">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="mailto:jacoblisic@gmail.com">Contact</a></li>
           </ul>
         </nav>
         <div class="social-links-container">
@@ -138,23 +139,18 @@
           <div class="social-links">
             <a href="https://www.instagram.com/jacoblisic/" target="_blank" rel="noopener">
               <img src="assets/icons/instagram.svg" alt="Instagram" />
-              <span class="hide">Instagram</span>
             </a>
             <a href="https://twitter.com/J_Lisic" target="_blank" rel="noopener">
               <img src="assets/icons/twitter.svg" alt="Twitter" />
-              <span class="hide">Twitter</span>
             </a>
             <a href="www.linkedin.com/in/jacoblisic" target="_blank" rel="noopener">
               <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-              <span class="hide">LinkedIn</span>
             </a>
             <a href="https://codepen.io/jlisic" target="_blank" rel="noopener">
               <img src="assets/icons/codepen.svg" alt="CodePen" />
-              <span class="hide">CodePen</span>
             </a>
             <a href="https://github.com/jacoblisic" target="_blank" rel="noopener">
               <img src="assets/icons/github.svg" alt="GitHub" />
-              <span class="hide">GitHub</span>
             </a>
           </div>
         </div>

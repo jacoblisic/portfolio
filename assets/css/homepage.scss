@@ -35,29 +35,29 @@ main {
                 h1 {
                     color: var(--black);
                     font-family: var(--roboto);
-                    font-size: 2.5em;
+                    font-size: 2.5rem;
                     font-weight: 700;
                     margin-bottom: .25em;
                     // background: linear-gradient(180deg, rgba(255,255,255,0) 65%, $green__primary 65%);
                     // display: inline;
 
                     @media screen and (min-width: 500px) and (max-width: 991px) { 
-                        font-size: 3em;
+                        font-size: 3rem;
                     }
 
                     @media screen and (min-width: 992px) {
-                        font-size: 4em;
+                        font-size: 4rem;
                     }
                 }
         
                 h2 {
                     font-family: var(--raleway);
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
                     font-weight: 400;
                     line-height: 1.3;
 
                     @media screen and (min-width: 992px) {
-                        font-size: 1.75em;
+                        font-size: 1.75rem;
                     }
 
                     .green-text {
@@ -91,19 +91,22 @@ main {
 
         @media screen and (min-width: 768px) {
             height: 65vh;
-            font-size: 1.5em;
             margin: 0 auto;
         }
 
         p {
-            font-size: 1.75em;
+            font-size: 2.5rem;
             line-height: 1.45;
-            margin-bottom: .35em;
+            margin-bottom: .5em;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1.75rem;
+            }
 
             &:before {
                 display: block;
                 background-color: var(--green);
-                width: 40px;
+                width: 60px;
                 height: 4px;
                 // border-radius: 4px;
                 content: '';
@@ -111,8 +114,12 @@ main {
             }
         }
 
-        @media screen and (max-width: 767px) {
-            font-size: 1.25em;
+        a {
+            font-size: 1.5rem;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1.25rem;
+            }
         }
     }
 
@@ -198,9 +205,14 @@ main {
                 bottom: 0;
                 width: 100%;
 
-                &:hover {
+                &:hover, &:focus {
                     background-color: var(--green__dark);
                 }
+
+                &:focus {
+					outline: 2px solid var(--green);
+					outline-offset: 5px;
+				}
             }
         }
     }
@@ -224,7 +236,7 @@ main {
     //         font-family: var(--raleway);
     //         font-style: italic;
     //         font-weight: 700;
-    //         font-size: 1.25em;
+    //         font-size: 1.25rem;
     //         line-height: 30px;
     //         text-align: center;
     //         margin-bottom: 1.5em;
@@ -232,7 +244,7 @@ main {
 
     //     .blockquote-person {
     //         font-style: italic;
-    //         font-size: 1em;
+    //         font-size: 1rem;
     //         text-align: center;
     //         margin: 0 auto;
     //     }
@@ -253,12 +265,12 @@ main {
         }
 
         p {
-            font-size: 1.05em;
+            font-size: 1.05rem;
             line-height: 28px;
             margin-bottom: 2em;
 
             @media screen and (min-width: 768px) {
-                font-size: 1.125em;
+                font-size: 1.125rem;
                 line-height: 30px;
             }
         }

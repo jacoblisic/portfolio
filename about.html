@@ -22,7 +22,7 @@
     <meta property='og:description' content='Click here to get in touch with Jacob Lisic.' />
     <meta property='og:url' content='https://jacoblisic.com/pages/about.html' />
 
-    <title>Jacob Lisic | About</title>
+    <title>About | Jacob Lisic</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -46,13 +46,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header class="header">
+    <div id="skipnav" class="visually-hidden"><a href="#mainContent">Skip navigation</a></div>
+    <header class="header" role="banner">
       <nav role="navigation" aria-label="primary">
         <div class="logo-themeToggle-container">
           <a href="index.html" aria-label="Home">
-            <span class="hide">Jacob Lisic Home</span>
-            <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" />
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
+            <span class="visually-hidden">Jacob Lisic Home</span>
+            <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" aria-hidden="true" />
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
           </a>
           <button id="dark-mode-toggle" class="dark-mode-toggle themeToggle" role="button" aria-label="Toggle Theme">
             <div class="themeSwitch"></div>
@@ -65,50 +66,50 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="about">
+    <main id="main-content" tabindex="-1">
+      <section class="about" aria-labelledby="about-h1">
           <div class="tablet-h1-container">
-              <h1 class="tablet-h1" data-aos="zoom-in-down" data-aos-duration="1000">Creating <span>impactful user interfaces</span> from the ground up.</h1> 
+              <h1 class="tablet-h1" data-aos="zoom-in-down" data-aos-duration="800">Creating <span>impactful user interfaces</span> from the ground up.</h1> 
           </div>
           <div class="about-container">
               <div class="about-content section-spacing">
-                  <h1 class="mobile-desktop-h2" data-aos="zoom-in-down" data-aos-duration="1000">Creating <span>impactful user interfaces</span> from the ground up.</h1> <!-- that last. -->
-                  <div data-aos="zoom-in-up" data-aos-duration="1500">
+                  <h1 id="about-h1" class="mobile-desktop-h2" data-aos="zoom-in-down" data-aos-duration="800">Creating <span>impactful user interfaces</span> from the ground up.</h1>
+                  <div data-aos="zoom-in-up" data-aos-duration="600">
                     <p>Hi, I'm Jacob Lisic. I'm a Digital Designer based in Akron, Ohio.</p>
                     <p>I graduated from Kent State Univerity in 2019 with a Bachelor of Science degree in Digital Sciences - Digital Systems Interaction and a minor in UX Design. Since then, I have been a part of an amazing team at Crum & Forster Pet Insurance &#128021; in Akron, Ohio.</p>
                     <p>I'm humbled each day that I have the opportunity to work on designing interfaces for better user interaction. I have been passionate about technology my whole life and love that I am able to use technology as part of my job.</p>
                   </div>
               </div>
-              <img src="assets/img/profile-about.jpg" alt="Photo of Jacob Lisic" data-aos="zoom-in-up" data-aos-duration="1500" />
+              <img src="assets/img/profile-about.jpg" alt="Photo of Jacob Lisic in suit jacket" data-aos="zoom-in-up" data-aos-duration="800" />
           </div>
       </section>
-      <section class="interests fromBottom section-spacing" data-aos="zoom-in-down" data-aos-duration="1200">
-          <h2>My <span class="green-text">interests</span>.</h2>
+      <section class="interests fromBottom section-spacing" data-aos="zoom-in-down" data-aos-duration="800" aria-labelledby="about-h2">
+          <h2 id="about-h2">My <span class="green-text">interests</span>.</h2>
           <p>In my spare time, I love to learn as much as I can to excel at my job. I love learning new CSS tricks and anything web design. You will often find me with my family and friends no matter where I am or what I'm doing. I am a brewery aficionado &#127866; and a very passionate tech enthusiast &#128104;&#8205;&#128187;. Whether it's Apple products &#128187;, podcast listening, gaming &#127918;, or PC building, you can always find me playing or tinkering with something.</p>
           <p>I'm also a really big Steelers fan and LeBron fan. I love to travel when I can and enjoy meeting new people too. If you'd like to get to know me more, feel free to <a href="mailto:jacoblisic@gmail.com" class="content-link">contact me</a>. I'd be happy to chat.</p>
-          <img src="assets/img/banner-image.jpeg" alt="Jacob overlooking his favorite city, Pittsburgh" loading="lazy" data-aos="zoom-out" data-aos-duration="1000" />
+          <img src="assets/img/banner-image.jpeg" alt="Jacob overlooking his favorite city, Pittsburgh" loading="lazy"/>
       </section>
       <!-- <section class="latest-work-container">
           show callouts to latest work. could be same block as what's on homepage to click through.
       </section> -->
     </main>
-    <footer role="contentinfo" aria-label="Footer">
+    <footer role="contentinfo">
       <div class="footer-container">
         <div class="footer-logo-container">
           <a href="index.html" aria-label="Home">
-            <span class="hide">Jacob Lisic Logo</span>
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
+            <span class="visually-hidden">Jacob Lisic Logo</span>
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
           </a>
           <div>
             <h4>Jacob Lisic</h4>
             <span>Digital Designer</span>
           </div>
         </div>
-        <nav role="navigation" tab-index="0">
-          <ul role="menubar">
-            <li role="none"><a href="about.html" role="menuitem" aria-current="page">About</a></li>
-            <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
-            <li role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
+        <nav role="navigation">
+          <ul>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mailto:jacoblisic@gmail.com">Contact</a></li>
           </ul>
         </nav>
         <div class="social-links-container">
@@ -116,23 +117,18 @@
           <div class="social-links">
             <a href="https://www.instagram.com/jacoblisic/" target="_blank" rel="noopener">
               <img src="assets/icons/instagram.svg" alt="Instagram" />
-              <span class="hide">Instagram</span>
             </a>
             <a href="https://twitter.com/J_Lisic" target="_blank" rel="noopener">
               <img src="assets/icons/twitter.svg" alt="Twitter" />
-              <span class="hide">Twitter</span>
             </a>
             <a href="www.linkedin.com/in/jacoblisic" target="_blank" rel="noopener">
               <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-              <span class="hide">LinkedIn</span>
             </a>
             <a href="https://codepen.io/jlisic" target="_blank" rel="noopener">
               <img src="assets/icons/codepen.svg" alt="CodePen" />
-              <span class="hide">CodePen</span>
             </a>
             <a href="https://github.com/jacoblisic" target="_blank" rel="noopener">
               <img src="assets/icons/github.svg" alt="GitHub" />
-              <span class="hide">GitHub</span>
             </a>
           </div>
         </div>

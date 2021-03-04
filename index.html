@@ -21,7 +21,7 @@
     <meta property='og:description' content='Click here to get in touch with Jacob Lisic.' />
     <meta property='og:url' content='https://jacoblisic.com' />
 
-    <title>Jacob Lisic | Home</title>
+    <title>Home | Jacob Lisic</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -45,13 +45,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header class="header">
+    <div id="skipnav" class="visually-hidden"><a href="#mainContent">Skip navigation</a></div>
+    <header class="header" role="banner">
       <nav role="navigation" aria-label="primary">
         <div class="logo-themeToggle-container">
           <a href="index.html" aria-label="Home" aria-current="page">
-            <span class="hide">Jacob Lisic Home</span>
-            <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" />
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
+            <span class="visually-hidden">Jacob Lisic Home</span>
+            <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" aria-hidden="true" />
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
           </a>
           <button id="dark-mode-toggle" class="dark-mode-toggle themeToggle" role="button" aria-label="Toggle Theme">
             <div class="themeSwitch"></div>
@@ -64,44 +65,44 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <!-- Heading -->
       <section class="heading-container">
         <div class="heading">
           <div role="none">
-            <h1 data-aos="zoom-in-down" data-aos-duration="800">Hi there, I'm Jacob.</h1>
-            <h2 data-aos="zoom-in-up" data-aos-duration="1000"><span class="green-text">Digital Designer</span> based in Akron, Ohio.</h2>
+            <h1 data-aos="zoom-in-down" data-aos-duration="600">Hi there, I'm Jacob.</h1>
+            <h2 data-aos="zoom-in-up" data-aos-duration="800"><span class="green-text">Digital Designer</span> based in Akron, Ohio.</h2>
           </div>
-          <img src="assets/img/profile-homepage.png" alt="Jacob Profile" class="profile-img" data-aos="fade-right" data-aos-duration="800" />
+          <img src="assets/img/profile-homepage.png" alt="Jacob Profile" class="profile-img" data-aos="fade-right" data-aos-duration="600" />
         </div>
       </section>
       <!-- End Heading -->
 
-      <div data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom" class="block-quote">
+      <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom" class="block-quote">
         <p>I’m passionate about designing &amp; developing user interfaces that shape the next generation of the web.</p>
         <div role="none">
-          <a href="pages/about.html" title="About Me" class="link primary-link">Learn About Me</a>
+          <a href="about.html" title="About Me" class="link primary-link">Learn About Me</a>
         </div>
       </div>
 
       <section class="see-my-work">
         <h3>Featured <span class="green-text">projects</span>.</h3>
         <ul class="featured-work-container">
-          <li class="work-one" data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+          <li class="work-one" data-aos="fade-right" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
             <div class="work-content">
               <h4>Member Center Refresh</h4>
               <p>A customer portal website hosting claim submissions, policy details and resources for thousands of pet insurance customers, across multiple brands.</p>
             </div>
             <a href="projects.html" class="work-link">View Project ></a>
           </li>
-          <li class="work-two" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+          <li class="work-two" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
             <div class="work-content">
               <h4>CHC Addiction Services</h4>
               <p>A local addiction services agency that provides prevention and recovery treatments.</p>
             </div>
             <a href="projects.html" class="work-link">View Project ></a>
           </li>
-          <li class="work-three" data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+          <li class="work-three" data-aos="fade-left" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
             <div class="work-content">
               <h4>Heritage Classical Academy</h4>
               <p>Academy in Peninsula, Ohio that provides students with education in a “Christ-centered environment.”</p>
@@ -111,36 +112,36 @@
         </ul>
       </section>
 
-      <!-- <section class="review section-spacing" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">
+      <!-- <section class="review section-spacing" data-aos="zoom-out-up" data-aos-duration="800" data-aos-anchor-placement="top-center">
         <blockquote>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </blockquote>
         <span class="blockquote-person">– First Last, Company Name</span>
       </section> -->
 
-      <section class="lets-create section-spacing" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+      <section class="lets-create section-spacing" data-aos="zoom-in-up" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
         <h3>Let's <span class="green-text">create</span>.</h3>
         <p>I help my clients create amazing web experiences for their customers by taking their thoughts and presenting them as a <strong>visual, concise design.</strong> I’m always ready for another challenge so feel free to reach out and we’ll create something to fit the needs of you and your customers.</p>
         <a href="pages/contact.html" class="button">Get in Touch</a>
       </section>
     </main>
-    <footer role="contentinfo" aria-label="Footer">
+    <footer role="contentinfo">
       <div class="footer-container">
         <div class="footer-logo-container">
           <a href="index.html" aria-label="Home" aria-current="page">
-            <span class="hide">Jacob Lisic Logo</span>
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
+            <span class="visually-hidden">Jacob Lisic Logo</span>
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
           </a>
           <div>
             <h4>Jacob Lisic</h4>
             <span>Digital Designer</span>
           </div>
         </div>
-        <nav role="navigation" tab-index="0">
-          <ul role="menubar">
-            <li role="none"><a href="about.html" role="menuitem">About</a></li>
-            <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
-            <li role="none"><a href="mailto:jacoblisic@gmail.com" role="menuitem">Contact</a></li>
+        <nav role="navigation">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mailto:jacoblisic@gmail.com">Contact</a></li>
           </ul>
         </nav>
         <div class="social-links-container">
@@ -148,23 +149,18 @@
           <div class="social-links">
             <a href="https://www.instagram.com/jacoblisic/" target="_blank" rel="noopener">
               <img src="assets/icons/instagram.svg" alt="Instagram" />
-              <span class="hide">Instagram</span>
             </a>
             <a href="https://twitter.com/J_Lisic" target="_blank" rel="noopener">
               <img src="assets/icons/twitter.svg" alt="Twitter" />
-              <span class="hide">Twitter</span>
             </a>
             <a href="www.linkedin.com/in/jacoblisic" target="_blank" rel="noopener">
               <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-              <span class="hide">LinkedIn</span>
             </a>
             <a href="https://codepen.io/jlisic" target="_blank" rel="noopener">
               <img src="assets/icons/codepen.svg" alt="CodePen" />
-              <span class="hide">CodePen</span>
             </a>
             <a href="https://github.com/jacoblisic" target="_blank" rel="noopener">
               <img src="assets/icons/github.svg" alt="GitHub" />
-              <span class="hide">GitHub</span>
             </a>
           </div>
         </div>
