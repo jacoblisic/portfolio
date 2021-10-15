@@ -50,7 +50,7 @@ main {
                     }
                 }
         
-                h2 {
+                .subhead {
                     font-family: var(--raleway);
                     font-size: 1.5rem;
                     font-weight: 400;
@@ -94,8 +94,9 @@ main {
             margin: 0 auto;
         }
 
-        p {
+        h2 {
             font-size: 2.5rem;
+            font-weight: normal;
             line-height: 1.45;
             margin-bottom: .5em;
 
