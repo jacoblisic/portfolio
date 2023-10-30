@@ -158,6 +158,7 @@
 .resume .resume-list-header hr {
   color: var(--green);
   width: 50px;
+  border: 1px solid;
 }
 
 .resume .resume-list {
