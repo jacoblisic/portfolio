@@ -14,8 +14,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/global.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/css/homepage.css" rel="stylesheet" type="text/css" media="screen" />
-    <meta name="description" content="Jacob Lisic is a Digital Designer in the Akron, Ohio area.">
-    <meta name="keywords" content="digital design, digital designer, web designer, interaction design, user interface design, design, digital, akron, ohio">
+    <meta name="description" content="Jacob Lisic is a Accessibility Specialist and UX Developer in the Akron, Ohio area.">
+    <meta name="keywords" content="accessibility, accessibility specialist, accessibility developer, accessibility designer, design, digital designer, web designer, interaction design, user interface design, design, digital, akron, ohio">
     <meta property='og:title' content='Portfolio' />
     <meta property='og:image' content='assets/img/lightMode-logo.svg' />
     <meta property='og:description' content='Click here to get in touch with Jacob Lisic.' />
@@ -51,16 +51,16 @@
         <div class="logo-themeToggle-container">
           <a href="index.html" aria-label="Home" aria-current="page">
             <img src="assets/logos/lightMode-logo.png" alt="Jacob Lisic Logo" class="lightmode-logo" aria-hidden="true" />
-            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" aria-hidden="true" />
+            <img src="assets/logos/darkMode-logo.png" alt="Jacob Lisic Logo" class="darkmode-logo" />
           </a>
-          <button id="dark-mode-toggle" class="dark-mode-toggle themeToggle" role="button" aria-label="Toggle Theme">
+          <button id="dark-mode-toggle" class="dark-mode-toggle themeToggle" role="button" aria-label="Toggle light mode or dark mode theme">
             <div class="themeSwitch"></div>
           </button>
         </div>
         <ul class="nav" id="nav">
           <li class="nav-item"><a href="about.html">About</a></li>
           <li class="nav-item"><a href="projects.html">Projects</a></li>
-          <li class="nav-item"><a href="mailto:jacoblisic@gmail.com">Contact</a></li>
+          <li class="nav-item"><a href="mailto:jacoblisic@gmail.com">Contact <span class="visually-hidden">(opens new email window)</span></a></li>
         </ul>
       </nav>
     </header>
@@ -69,8 +69,8 @@
       <section class="heading-container">
         <div class="heading">
           <div>
-            <h1>Hi there, I'm Jacob.</h1>
-            <p class="subhead"><span class="green-text">UX Developer</span> based in Akron, Ohio.</p>
+            <h1>Hello there, I'm Jacob.</h1>
+            <p class="subhead"><span class="green-text">Accessibility Specialist & UX Developer</span> based in Akron, Ohio.</p>
           </div>
           <img src="assets/img/profile-homepage.png" alt="Jacob Profile" class="profile-img" />
         </div>
@@ -119,9 +119,9 @@
       </section> -->
 
       <section class="lets-create section-spacing">
-        <h3>Let's <span class="green-text">create</span>.</h3>
-        <p>I help my clients create amazing web experiences for their customers by taking their thoughts and presenting them as a <strong>visual, concise design.</strong> I’m always ready for another challenge so feel free to reach out and we’ll create something to fit the needs of you and your customers.</p>
-        <a href="mailto:jacoblisic@gmail.com" class="button">Get in Touch <span class="visually-hidden">(opens new window)</span></a>
+        <h3>Let's <span class="green-text">work together</span>.</h3>
+        <p>I help my clients create amazing web experiences for their customers by taking their thoughts and presenting them as a <strong>visual, concise, and accessibile design.</strong> I’m always ready for another challenge, so feel free to reach out and we’ll create something that fits the needs of you and your customers.</p>
+        <a href="mailto:jacoblisic@gmail.com" class="button">Get in Touch <span class="visually-hidden">(opens new email window)</span></a>
       </section>
     </main>
     <footer role="contentinfo">
@@ -135,11 +135,11 @@
             <span>UX Developer</span>
           </div>
         </div>
-        <nav role="navigation">
+        <nav role="navigation" aria-label="footer">
           <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="mailto:jacoblisic@gmail.com">Contact</a></li>
+            <li><a href="mailto:jacoblisic@gmail.com">Contact <span class="visually-hidden">(opens new email window)</span></a></li>
           </ul>
         </nav>
         <div class="social-links-container">
@@ -148,8 +148,8 @@
             <a href="https://www.instagram.com/jacoblisic/">
               <img src="assets/icons/instagram.svg" alt="Instagram" />
             </a>
-            <a href="https://twitter.com/J_Lisic">
-              <img src="assets/icons/twitter.svg" alt="Twitter" />
+            <a href="https://www.threads.net/@jacoblisic">
+              <img src="assets/icons/threads.svg" alt="Threads" />
             </a>
             <a href="www.linkedin.com/in/jacoblisic">
               <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
@@ -163,12 +163,12 @@
           </div>
         </div>
         <div class="mail-email">
-          <a href="mailto:jacoblisic@gmail.com"><img src="assets/icons/mail.svg" alt="Email" class="email-icon" /><span>jacoblisic@gmail.com</span></a>
-          <a href="https://goo.gl/maps/yG7kCxJBUVLFSGay5"><img src="assets/icons/location.svg" alt="Location" class="location-icon" /><span>Akron, Ohio</span></a>
+          <a href="mailto:jacoblisic@gmail.com"><img src="assets/icons/mail.svg" alt="" class="email-icon" /><span>jacoblisic@gmail.com</span></a>
+          <a href="https://goo.gl/maps/yG7kCxJBUVLFSGay5"><img src="assets/icons/location.svg" alt="" class="location-icon" /><span>Akron, Ohio</span></a>
         </div>
         <div class="site-info">
-          <p>HTML and CSS by me, myself and I.</p>
-          <p>© Copyright 2023.</p>
+          <p>HTML, CSS, and ARIA by this Star Wars nerd.</p>
+          <p>© Copyright 2024.</p>
         </div>
       </div>
     </footer>
